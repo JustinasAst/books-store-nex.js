@@ -7,6 +7,7 @@ import ListenedBookBox from '../components/listenedBookBox';
 import RecentlyPlayedBox from '../components/recentlyPlayedBox';
 import MostPopularSection from '../components/mostPopularSection';
 import SideBookSection from '../components/sideBookSection';
+import Test from '../components/test';
 import { useState } from 'react';
 
 const Home: NextPage = () => {
@@ -34,8 +35,14 @@ const Home: NextPage = () => {
           <ListenedBookBox />
           <RecentlyPlayedBox turnOn={turnOn} />
           <MostPopularSection />
+          {/* <Header />
+          <ListenedBookBox />
+          <RecentlyPlayedBox turnOn={turnOn} />
+          <MostPopularSection /> */}
         </div>
-        <SideBookSection toggle={toggle} turnOff={turnOff} />
+        <div className="sideSection">
+          <SideBookSection toggle={toggle} turnOff={turnOff} />
+        </div>
       </main>
     </div>
   );

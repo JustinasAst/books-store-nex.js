@@ -3,8 +3,7 @@
   border-radius: 10px;
   box-sizing: border-box;
   margin: 20px;
-
-  width: 30%;
+  width: 400px;
 }
 
 .side-book-section-header {
@@ -29,7 +28,6 @@
 
 .active-book-image {
   border-radius: 5px;
-  width: 33%;
 }
 
 .chapter-list-button {
@@ -48,6 +46,7 @@
 
 .reading-book-info-title {
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
 }
 
 .reading-book-info-author {

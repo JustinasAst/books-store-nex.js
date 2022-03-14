@@ -5,6 +5,7 @@ import '../styles/listenedBookBox.css';
 import '../styles/recentlyPlayedBox.css';
 import '../styles/mostPopularSection.css';
 import '../styles/sideBookSection.css';
+import '../styles/test.css';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {

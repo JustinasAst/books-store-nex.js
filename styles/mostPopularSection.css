@@ -1,41 +1,33 @@
-.most-popular-played-book-section {
-  /* box-sizing: border-box; */
-}
-
-.most-popular-payed-book-box-section-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.most-popular-payed-book-box {
-  display: flex;
-  max-height: 150px;
-  width: 32%;
-}
-
-.most-popular-payed-book-box > img {
-  border-radius: 10px;
-}
-
-.most-popular-payed-book-box-info {
-  margin-left: 20px;
-  width: 100%;
-}
-
-.most-popular-payed-book-box-time-rating {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
 .most-popular-played-book-section-header {
+  margin: 20px 0 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.most-popular-payed-book-box-info > h4 {
-  font-family: 'Times New Roman', Times, serif;
+.most-popular-payed-book-box {
+  display: flex;
+  width: 33%;
+}
+
+.most-popular-payed-book-box > img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100%;
+}
+
+.most-popular-payed-book-box-section-list {
+  display: flex;
+}
+
+.most-popular-payed-book-box-time-rating {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .most-popular-payed-book-box-info p {
@@ -43,6 +35,10 @@
   font-size: 15px;
 }
 
-.most-popular-played-book-section-header {
-  margin: 120px 0 20px;
+.most-popular-payed-book-box-info > h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+.most-popular-payed-book-box-info {
+  margin-left: 10px;
+  width: 100%;
 }

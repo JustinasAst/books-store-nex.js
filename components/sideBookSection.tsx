@@ -2,7 +2,6 @@ import React, { SetStateAction } from 'react';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { MdOutlineStickyNote2 } from 'react-icons/md';
 import { CgList } from 'react-icons/cg';
-import { useState } from 'react';
 
 interface ComponentProps {
   toggle: boolean;
