@@ -1,0 +1,33 @@
+.recently-played-book-section {
+}
+
+.book-list-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recently-played-book-section-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.recently-payed-book-box > img {
+  border-radius: 15px;
+  max-height: 100%;
+  width: 100%;
+}
+.recently-payed-book-box > p {
+  color: rgb(148, 145, 145);
+}
+
+.recently-payed-book-box > h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.recently-payed-book-box {
+  max-width: 350px;
+  max-height: 400px;
+}

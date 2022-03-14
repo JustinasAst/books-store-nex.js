@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 import Navigation from '../components/navigation';
 import Header from '../components/header';
 import ListenedBookBox from '../components/listenedBookBox';
+import RecentlyPlayedBox from '../components/recentlyPlayedBox';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <div className={styles.components}>
           <Header />
           <ListenedBookBox />
+          <RecentlyPlayedBox />
         </div>
       </main>
     </div>
