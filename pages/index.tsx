@@ -6,8 +6,20 @@ import Header from '../components/header';
 import ListenedBookBox from '../components/listenedBookBox';
 import RecentlyPlayedBox from '../components/recentlyPlayedBox';
 import MostPopularSection from '../components/mostPopularSection';
+import SideBookSection from '../components/sideBookSection';
+import { useState } from 'react';
 
 const Home: NextPage = () => {
+  const [toggle, setToggle] = useState(true);
+
+  const turnOff = () => {
+    setToggle(false);
+  };
+
+  const turnOn = () => {
+    setToggle(true);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,9 +32,10 @@ const Home: NextPage = () => {
         <div className={styles.components}>
           <Header />
           <ListenedBookBox />
-          <RecentlyPlayedBox />
+          <RecentlyPlayedBox turnOn={turnOn} />
           <MostPopularSection />
         </div>
+        <SideBookSection toggle={toggle} turnOff={turnOff} />
       </main>
     </div>
   );

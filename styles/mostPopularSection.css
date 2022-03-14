@@ -1,6 +1,5 @@
 .most-popular-played-book-section {
-  margin-top: 100px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .most-popular-payed-book-box-section-list {
@@ -42,4 +41,8 @@
 .most-popular-payed-book-box-info p {
   color: rgb(94, 93, 93);
   font-size: 15px;
+}
+
+.most-popular-played-book-section-header {
+  margin: 120px 0 20px;
 }
