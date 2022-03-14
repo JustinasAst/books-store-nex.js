@@ -112,7 +112,8 @@
 
 .components {
   width: 100%;
-  padding-left: 30px;
+  padding-left: 150px;
+  padding-right: 30px;
 }
 
 .logo {

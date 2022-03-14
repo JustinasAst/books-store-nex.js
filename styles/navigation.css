@@ -17,6 +17,8 @@
 
 .user-nav-box > .nav-item {
   margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 25px;
 }
 
 .navbar-nav {
@@ -26,11 +28,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   height: 100vh;
   background-color: #fff;
 }
 .navbar-nav > .nav-item:hover {
-  background-color: rgb(55, 10, 218);
+  background-color: rgb(83, 43, 228);
   border-radius: 5px;
   transition: 150ms;
   box-shadow: 0px 5px 3px 1px #000000;
@@ -38,14 +41,14 @@
 }
 
 .user-nav-box > .lisen-item:hover {
-  background-color: rgb(55, 10, 218);
+  background-color: rgb(83, 43, 228);
   border-radius: 100%;
   transition: 250ms;
   color: #fff;
 }
 
 .nav-item {
-  margin: 20px;
+  margin-top: 60px;
   cursor: pointer;
   color: rgb(112, 108, 108);
   background-color: none;
@@ -54,8 +57,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 25px;
 }
 
 .nav-item:last-child {
   margin-top: auto;
+  margin-bottom: 30px;
 }

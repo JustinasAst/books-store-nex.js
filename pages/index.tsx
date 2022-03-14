@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navigation from '../components/navigation';
 import Header from '../components/header';
+import ListenedBookBox from '../components/listenedBookBox';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <Navigation />
         <div className={styles.components}>
           <Header />
+          <ListenedBookBox />
         </div>
       </main>
     </div>

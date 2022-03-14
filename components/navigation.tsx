@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiHeadphone } from 'react-icons/bi';
-import { RiHomeLine } from 'react-icons/ri';
+import { AiFillHome } from 'react-icons/ai';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FiShoppingCart } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
@@ -24,7 +24,7 @@ const Navigation = () => {
         </div>
 
         <li className="nav-item">
-          <RiHomeLine />
+          <AiFillHome />
         </li>
         <li className="nav-item">
           <AiOutlineHeart />

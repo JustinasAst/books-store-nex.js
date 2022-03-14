@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '../styles/navigation.css';
 import '../styles/header.css';
+import '../styles/listenedBookBox.css';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
