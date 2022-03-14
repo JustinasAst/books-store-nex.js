@@ -5,6 +5,7 @@ import Navigation from '../components/navigation';
 import Header from '../components/header';
 import ListenedBookBox from '../components/listenedBookBox';
 import RecentlyPlayedBox from '../components/recentlyPlayedBox';
+import MostPopularSection from '../components/mostPopularSection';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
           <Header />
           <ListenedBookBox />
           <RecentlyPlayedBox />
+          <MostPopularSection />
         </div>
       </main>
     </div>

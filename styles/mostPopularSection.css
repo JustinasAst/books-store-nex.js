@@ -1,0 +1,45 @@
+.most-popular-played-book-section {
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+.most-popular-payed-book-box-section-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.most-popular-payed-book-box {
+  display: flex;
+  max-height: 150px;
+  width: 32%;
+}
+
+.most-popular-payed-book-box > img {
+  border-radius: 10px;
+}
+
+.most-popular-payed-book-box-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.most-popular-payed-book-box-time-rating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.most-popular-played-book-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.most-popular-payed-book-box-info > h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.most-popular-payed-book-box-info p {
+  color: rgb(94, 93, 93);
+  font-size: 15px;
+}
