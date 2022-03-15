@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { AiOutlineBackward, AiOutlineForward } from 'react-icons/ai';
+import { GrForwardTen, GrBackTen } from 'react-icons/gr';
+import { BsSkipBackwardFill } from 'react-icons/bs';
+import { BsFillSkipForwardFill } from 'react-icons/bs';
 import { ImPlay3 } from 'react-icons/im';
 import { GiPauseButton } from 'react-icons/gi';
 
@@ -40,9 +42,9 @@ export const AudioPlayer = () => {
     }
   };
 
-  const changeRange = () => {
-    audioPlayer.current.currentTime = progressBar.current.value;
-  };
+  // const changeRange = () => {
+  //   audioPlayer.current.currentTime = progressBar.current.value;
+  // };
 
   return (
     <div className="audio-player">
@@ -51,28 +53,35 @@ export const AudioPlayer = () => {
         preload="metadata"
         ref={audioPlayer}
       ></audio>
-
-      <button className="forward-backward-button">
-        <AiOutlineBackward /> 30 sec
-      </button>
-
-      <button onClick={playPause}>
-        {isPlaying ? <GiPauseButton /> : <ImPlay3 />}
-      </button>
-
-      <button className="forward-backward-button">
-        <AiOutlineForward /> 30 sec
-      </button>
-
-      <div>{calculateTime(currentTime)}</div>
       <input
         className="progress-bar"
         type="range"
         defaultValue={0}
         ref={progressBar}
-        onChange={changeRange}
+        // onChange={changeRange}
       />
-      <div>{calculateTime(duration)}</div>
+      <div className="time-range">
+        <div>{calculateTime(currentTime)}</div>
+        <div>{calculateTime(duration)}</div>
+      </div>
+
+      <div className="player-button-box">
+        <button className="forward-backward-button">
+          <BsSkipBackwardFill />
+        </button>
+        <button className="forward-backward-button">
+          <GrBackTen />
+        </button>
+        <button className="pause-play-button" onClick={playPause}>
+          {isPlaying ? <GiPauseButton /> : <ImPlay3 />}
+        </button>
+        <button className="forward-backward-button">
+          <GrForwardTen />
+        </button>
+        <button className="forward-backward-button">
+          <BsFillSkipForwardFill />
+        </button>
+      </div>
     </div>
   );
 };

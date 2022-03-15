@@ -12,6 +12,7 @@
 .most-popular-payed-book-box {
   display: flex;
   width: 33%;
+  margin-bottom: 20px;
 }
 
 .most-popular-payed-book-box > img {

@@ -54,19 +54,10 @@ export const SideBookSection: React.FC<ComponentProps> = ({
               placeat, debitis, harum architecto voluptate omnis? Explicabo,
               error ad. Omnis recusandae porro eum? Eveniet maxime labore quasi
               nulla, suscipit asperiores, fuga possimus cupiditate autem minima
-              officia natus, quaerat quis harum. In dolorem esse eligendi
-              voluptates excepturi ipsam quam hic. repellendus a iste provident
-              voluptatibus perferendis rerum blanditiis! Hic ratione
-              consequuntur dolores, veritatis ipsa excepturi aut eum voluptas
-              sequi inventore facilis placeat, debitis, harum architecto
-              voluptate omnis? Explicabo, error ad. Omnis recusandae porro eum?
-              Eveniet maxime labore quasi nulla, suscipit asperiores, fuga
-              possimus cupiditate autem minima officia natus, quaerat quis
-              harum. In dolorem esse eligendi voluptates excepturi ipsam quam
-              hic.
             </p>
             <div className="player-sectio"></div>
           </div>
+          <AudioPlayer />
         </div>
       ) : (
         <div></div>
