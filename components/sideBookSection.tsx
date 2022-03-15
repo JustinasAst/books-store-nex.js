@@ -2,6 +2,7 @@ import React, { SetStateAction } from 'react';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { MdOutlineStickyNote2 } from 'react-icons/md';
 import { CgList } from 'react-icons/cg';
+import AudioPlayer from './audioPlayer';
 
 interface ComponentProps {
   toggle: boolean;
