@@ -1,5 +1,6 @@
 .recently-payed-book-box {
   width: 20%;
+  cursor: pointer;
 }
 
 .book-list-section {
@@ -28,4 +29,28 @@
 
 .recently-payed-book-box > h3 {
   font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1200px) {
+  .recently-payed-book-box {
+    width: 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  .recently-payed-book-box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 550px) {
+  .recently-payed-book-box {
+    width: 65%;
+    text-align: center;
+  }
+  .book-list-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 }

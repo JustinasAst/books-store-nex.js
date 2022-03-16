@@ -2,7 +2,7 @@ import React, { SetStateAction } from 'react';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { MdOutlineStickyNote2 } from 'react-icons/md';
 import { CgList } from 'react-icons/cg';
-import AudioPlayer from './audioPlayer';
+import AudioPlayer from './AudioPlayer';
 
 interface ComponentProps {
   toggle: boolean;
@@ -43,18 +43,21 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                 </button>
               </div>
             </div>
-            <p className="book-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-              nulla possimus rem odit quo, quas laboriosam expedita ducimus
-              molestias iste vel doloremque perspiciatis labore nostrum magnam
-              accusantium officiis porro sed ea ipsa libero ut, neque non. Nemo
-              quas maxime modi repellendus a iste provident voluptatibus
-              perferendis rerum blanditiis! Hic ratione consequuntur dolores,
-              veritatis ipsa excepturi aut eum voluptas sequi inventore facilis
-              placeat, debitis, harum architecto voluptate omnis? Explicabo,
-              error ad. Omnis recusandae porro eum? Eveniet maxime labore quasi
-              nulla, suscipit asperiores, fuga possimus cupiditate autem minima
-            </p>
+            <div>
+              <p className="book-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                nulla possimus rem odit quo, quas laboriosam expedita ducimus
+                molestias iste vel doloremque perspiciatis labore nostrum magnam
+                accusantium officiis porro sed ea ipsa libero ut, neque non.
+                Nemo quas maxime modi repellendus a iste provident voluptatibus
+                perferendis rerum blanditiis! Hic ratione consequuntur dolores,
+                veritatis ipsa excepturi aut eum voluptas sequi inventore
+                facilis placeat, debitis, harum architecto voluptate omnis?
+                Explicabo, error ad. Omnis recusandae porro eum? Eveniet maxime
+                labore quasi nulla, suscipit asperiores, fuga possimus
+                cupiditate autem minima
+              </p>
+            </div>
             <div className="player-sectio"></div>
           </div>
           <AudioPlayer />

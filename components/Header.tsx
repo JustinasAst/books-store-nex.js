@@ -1,10 +1,19 @@
 import React from 'react';
 import { VscBellDot } from 'react-icons/vsc';
 import { BsSearch } from 'react-icons/bs';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-const Header = () => {
+interface ComponentPromps {
+  menuToggle: boolean;
+  menuTurnOn: () => void;
+}
+
+const Header: React.FC<ComponentPromps> = ({ menuToggle, menuTurnOn }) => {
   return (
     <div className="header-box">
+      <div className="burger-menu" onClick={menuTurnOn}>
+        <GiHamburgerMenu />
+      </div>
       <h2 className="greeting">Good Morning, Justinas</h2>
       <div className="input-bell-box">
         <label className="search-label">

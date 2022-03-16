@@ -45,6 +45,7 @@
 .book-title-box {
   flex: 4;
   padding-top: 40px;
+  margin-left: 15px;
 }
 
 .progress-value {
@@ -52,6 +53,7 @@
   background: rgb(8, 204, 188);
   height: 5px;
   width: 90%;
+  position: absolute;
 }
 .progress-background {
   background: rgb(136, 111, 230);
@@ -71,4 +73,32 @@
 
 .dot {
   margin: 0 20px;
+}
+
+@media (max-width: 1340px) {
+  .main-lestened-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .play-button-box {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .listenedBook {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px 3px #fff;
+  }
+  .book-cover-box {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-lestened-box {
+    width: 96vw;
+  }
 }

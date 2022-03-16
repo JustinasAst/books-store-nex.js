@@ -4,11 +4,19 @@
   border-radius: 100%;
   object-fit: cover;
 }
-
+.navigation-off {
+  display: none;
+}
 .navigation {
   width: 90px;
-  height: 100%;
   position: absolute;
+  display: block;
+  /* height: 100%; */
+  max-height: max-content;
+}
+
+.nagivation.opened {
+  display: block;
 }
 
 .user-nav-box {
@@ -63,4 +71,33 @@
 .nav-item:last-child {
   margin-top: auto;
   margin-bottom: 30px;
+}
+
+.exit-navigation {
+  display: none;
+}
+
+@media (max-width: 775px) {
+  .navigation {
+    width: 90px;
+    height: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 400px) {
+  .navigation {
+    position: absolute;
+    z-index: 2;
+    display: none;
+  }
+
+  .navigation.opened {
+    display: block;
+  }
+
+  .exit-navigation {
+    display: block;
+    margin-top: 20px;
+  }
 }

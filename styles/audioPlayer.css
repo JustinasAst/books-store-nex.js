@@ -1,12 +1,7 @@
 .audio-player {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
-
-/* .forward-backward-button {
-  background-color: none;
-  border: none;
-} */
 
 .progress-bar {
   --bar-bg: #a4daf3;

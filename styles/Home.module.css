@@ -1,11 +1,5 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
-  background-color: #fafafa;
   min-height: 100vh;
-  margin: 60px 50px;
   box-sizing: border-box;
   display: flex;
 }
@@ -16,9 +10,37 @@
   padding-right: 30px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.sideSection {
+  margin: 20px;
+}
+
+@media (max-width: 1150px) {
+  .container {
+  }
+  .main {
+    min-height: 100vh;
+    margin: 0px 0px;
+
+    display: flex;
+  }
+  .components {
+    padding-left: 100px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 775px) {
+  .components {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .components {
+    padding: 5px;
   }
 }

@@ -5,12 +5,22 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { FiShoppingCart } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
 import { MdLogout } from 'react-icons/md';
+import { ImCross } from 'react-icons/im';
 
-const Navigation = () => {
+interface ComponentPromps {
+  menuToggle: boolean;
+  menuTurnOff: () => void;
+}
+
+const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
   return (
-    <nav className="navigation">
+    // <nav className={menuToggle ? 'navigation opened' : 'navigation'}>
+    <nav className={`navigation ${menuToggle ? 'opened' : ''}`}>
       <ul className="navbar-nav">
         <div className="user-nav-box">
+          <li className="exit-navigation" onClick={menuTurnOff}>
+            <ImCross />
+          </li>
           <li className="nav-item lisen-item">
             <BiHeadphone />
           </li>

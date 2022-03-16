@@ -1,16 +1,18 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Navigation from '../components/navigation';
-import Header from '../components/header';
-import ListenedBookBox from '../components/listenedBookBox';
-import RecentlyPlayedBox from '../components/recentlyPlayedBox';
-import MostPopularSection from '../components/mostPopularSection';
-import SideBookSection from '../components/sideBookSection';
+import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+import ListenedBookBox from '../components/ListenedBookBox';
+import RecentlyPlayedBox from '../components/RecentlyPlayedBox';
+import MostPopularSection from '../components/MostPopularSection';
+import SideBookSection from '../components/SideBookSection';
+
 import { useState } from 'react';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(true);
+  const [menuToggle, setMenuToggle] = useState(false);
 
   const turnOff = () => {
     setToggle(false);
@@ -18,6 +20,14 @@ const Home: NextPage = () => {
 
   const turnOn = () => {
     setToggle(true);
+  };
+
+  const menuTurnOn = () => {
+    setMenuToggle(true);
+  };
+
+  const menuTurnOff = () => {
+    setMenuToggle(false);
   };
 
   return (
@@ -29,16 +39,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Navigation />
+        <Navigation menuTurnOff={menuTurnOff} menuToggle={menuToggle} />
 
         <div className={styles.components}>
-          <Header />
+          <Header menuTurnOn={menuTurnOn} menuToggle={menuToggle} />
           <ListenedBookBox />
           <RecentlyPlayedBox turnOn={turnOn} />
           <MostPopularSection />
         </div>
 
-        <div className="sideSection">
+        <div className={styles.sideSection}>
           <SideBookSection toggle={toggle} turnOff={turnOff} />
         </div>
       </main>
