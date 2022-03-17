@@ -22,6 +22,7 @@ export const AudioPlayer = () => {
     setDuration(seconds);
 
     let progressBarRange = Number(progressBar.current.max);
+
     progressBarRange = seconds;
   }, [audioPlayer?.current?.onloadeddata, audioPlayer?.current?.readyState]);
 
@@ -33,11 +34,13 @@ export const AudioPlayer = () => {
     return `${returnMinutes}:${returnSeconds}`;
   };
 
+  // minejai kad geriau naudoti du if negu naudoti else. Siuo atveju buciau naudojes ternary operator.
   const playPause = () => {
     setIsplaying(!isPlaying);
     if (!isPlaying) {
       audioPlayer.current.play();
-    } else {
+    }
+    if (isPlaying) {
       audioPlayer.current.pause();
     }
   };
@@ -49,12 +52,14 @@ export const AudioPlayer = () => {
         preload="metadata"
         ref={audioPlayer}
       ></audio>
+
       <input
         className="progress-bar"
         type="range"
         defaultValue={0}
         ref={progressBar}
       />
+
       <div className="time-range">
         <div>{calculateTime(currentTime)}</div>
         <div>{calculateTime(duration)}</div>
@@ -64,15 +69,19 @@ export const AudioPlayer = () => {
         <button className="forward-backward-button">
           <BsSkipBackwardFill />
         </button>
+
         <button className="forward-backward-button">
           <GrBackTen />
         </button>
+
         <button className="pause-play-button" onClick={playPause}>
           {isPlaying ? <GiPauseButton /> : <ImPlay3 />}
         </button>
+
         <button className="forward-backward-button">
           <GrForwardTen />
         </button>
+
         <button className="forward-backward-button">
           <BsFillSkipForwardFill />
         </button>

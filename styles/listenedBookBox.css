@@ -13,6 +13,7 @@
   justify-content: space-between;
   box-shadow: 0px 5px 3px 5px var(--solid-black);
 }
+
 .listenedBook {
   height: 200px;
   border-radius: 10px;

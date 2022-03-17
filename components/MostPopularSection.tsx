@@ -9,15 +9,18 @@ const MostPopularSection = () => {
         <h3>Most Popular</h3>
         <p>See All</p>
       </div>
+
       <div className="most-popular-payed-book-box-section-list">
         <div className="most-popular-payed-book-box">
           <img
             src="https://bags-of-books.co.uk/wp-content/uploads/2020/11/9780007458424.jpg"
             alt="hobbit"
           />
+
           <div className="most-popular-payed-book-box-info">
             <p>Vardas Pavarde</p>
             <h4>Pavadinimas</h4>
+
             <div className="most-popular-payed-book-box-time-rating">
               <p>
                 <FaHeadphonesAlt /> 3h 32min
@@ -28,14 +31,17 @@ const MostPopularSection = () => {
             </div>
           </div>
         </div>
+
         <div className="most-popular-payed-book-box">
           <img
             src="https://bags-of-books.co.uk/wp-content/uploads/2020/11/9780007458424.jpg"
             alt="hobbit"
           />
+
           <div className="most-popular-payed-book-box-info">
             <p>Vardas Pavarde</p>
             <h4>Pavadinimas</h4>
+
             <div className="most-popular-payed-book-box-time-rating">
               <p>
                 <FaHeadphonesAlt /> 3h 32min
@@ -46,14 +52,17 @@ const MostPopularSection = () => {
             </div>
           </div>
         </div>
+
         <div className="most-popular-payed-book-box">
           <img
             src="https://bags-of-books.co.uk/wp-content/uploads/2020/11/9780007458424.jpg"
             alt="hobbit"
           />
+
           <div className="most-popular-payed-book-box-info">
             <p>Vardas Pavarde</p>
             <h4>Pavadinimas</h4>
+
             <div className="most-popular-payed-book-box-time-rating">
               <p>
                 <FaHeadphonesAlt /> 3h 32min
