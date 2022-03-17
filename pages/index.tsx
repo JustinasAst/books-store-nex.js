@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <Navigation menuTurnOff={menuTurnOff} menuToggle={menuToggle} />
 
         <div className={styles.components}>
-          <Header menuTurnOn={menuTurnOn} menuToggle={menuToggle} />
+          <Header menuTurnOn={menuTurnOn} />
           <ListenedBookBox />
           <RecentlyPlayedBox turnOn={turnOn} />
           <MostPopularSection />

@@ -4,11 +4,10 @@ import { BsSearch } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 interface ComponentPromps {
-  menuToggle: boolean;
   menuTurnOn: () => void;
 }
 
-const Header: React.FC<ComponentPromps> = ({ menuToggle, menuTurnOn }) => {
+const Header: React.FC<ComponentPromps> = ({ menuTurnOn }) => {
   return (
     <div className="header-box">
       <div className="burger-menu" onClick={menuTurnOn}>

@@ -1,17 +1,16 @@
+:root {
+  --primary: rgb(255, 255, 255);
+  --secondary: rgb(83, 43, 228);
+  --solid-black: rgb(5, 5, 5);
+}
+
 .audio-player {
   width: 90%;
   margin: 20px auto 0 auto;
 }
 
 .progress-bar {
-  --bar-bg: #a4daf3;
-  --seek-before-width: 0;
-  --eek-before-color: #ffc2a1;
-  --knobby: #3452a5;
-  --selectedKnobby: #26c9c3;
-
   appearance: none;
-  background-color: var(--bar-bg);
   border-radius: 10px;
   position: relative;
   width: 100%;
@@ -43,15 +42,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 1px 1px 3px #000000;
-  background-color: #6446eb;
-  color: #fff;
+  box-shadow: 0px 1px 1px 3px var(--solid-black);
+  background-color: var(--secondary);
+  color: var(--primary);
   cursor: pointer;
 }
 
 .forward-backward-button {
   font-size: 30px;
-  color: rgb(0, 0, 0);
+  color: var(--solid-black);
   background: none;
   border: none;
   cursor: pointer;
