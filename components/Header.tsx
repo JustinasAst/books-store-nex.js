@@ -13,17 +13,21 @@ const Header: React.FC<ComponentPromps> = ({ menuTurnOn }) => {
       <div className="burger-menu" onClick={menuTurnOn}>
         <GiHamburgerMenu />
       </div>
+
       <h2 className="greeting">Good Morning, Justinas</h2>
+
       <div className="input-bell-box">
         <label className="search-label">
           <BsSearch />
         </label>
+
         <input
           className="book-search-input"
           type="text"
           placeholder="Search books here"
         />
-        <p className="bell">
+
+        <p className="bell-icon">
           <VscBellDot />
         </p>
       </div>

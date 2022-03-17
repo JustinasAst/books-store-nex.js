@@ -15,15 +15,15 @@ interface ComponentPromps {
 const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
   return (
     <nav className={`navigation ${menuToggle ? 'opened' : ''}`}>
-      <ul className="navbar-nav">
-        <div className="user-nav-box">
+      <ul className="navbar">
+        <div className="user-navigation-box">
           <li className="exit-navigation" onClick={menuTurnOff}>
             <ImCross />
           </li>
-          <li className="nav-item lisen-item">
+          <li className="navigation-item lisen-item">
             <BiHeadphone />
           </li>
-          <li className="nav-item">
+          <li className="navigation-item">
             <img
               className="user-img"
               src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg"
@@ -32,19 +32,19 @@ const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
           </li>
         </div>
 
-        <li className="nav-item">
+        <li className="navigation-item">
           <AiFillHome />
         </li>
-        <li className="nav-item">
+        <li className="navigation-item">
           <AiOutlineHeart />
         </li>
-        <li className="nav-item">
+        <li className="navigation-item">
           <FiShoppingCart />
         </li>
-        <li className="nav-item">
+        <li className="navigation-item">
           <BsPerson />
         </li>
-        <li className="nav-item">
+        <li className="navigation-item">
           <MdLogout />
         </li>
       </ul>

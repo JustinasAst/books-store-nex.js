@@ -1,4 +1,4 @@
-import React, { SetStateAction } from 'react';
+import React from 'react';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { MdOutlineStickyNote2 } from 'react-icons/md';
 import { CgList } from 'react-icons/cg';
@@ -26,23 +26,26 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                 <MdOutlineStickyNote2 />
               </p>
             </div>
+
             <div className="side-book-section-main-book">
               <img
                 className="active-book-image"
                 src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
                 alt="games of thrones"
               />
+
               <div className="reading-book-info">
                 <h2 className="reading-book-info-title">Games of Thrones</h2>
                 <p className="reading-book-info-author">Vardas Pavarde</p>
                 <p className="reading-book-info-chapter">
                   Chapter Eight: Partners
                 </p>
-                <button className="chapter-list-button">
+                <button type="button" className="chapter-list-button">
                   <CgList style={{ marginRight: '5px' }} /> Chapter-list
                 </button>
               </div>
             </div>
+
             <div>
               <p className="book-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
@@ -58,7 +61,6 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                 cupiditate autem minima
               </p>
             </div>
-            <div className="player-sectio"></div>
           </div>
           <AudioPlayer />
         </div>

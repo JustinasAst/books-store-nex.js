@@ -9,55 +9,55 @@
   align-items: center;
 }
 
-.most-popular-payed-book-box {
+.most-popular-played-book-box {
   display: flex;
   width: 33%;
   margin-top: 20px;
 }
 
-.most-popular-payed-book-box > img {
+.most-popular-played-book-box > img {
   border-radius: 10px;
   width: 100px;
   height: 100%;
 }
 
-.most-popular-payed-book-box-section-list {
+.most-popular-played-book-box-section-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.most-popular-payed-book-box-time-rating {
+.most-popular-played-book-box-time-rating {
   display: flex;
   justify-content: space-between;
   width: 90%;
 }
 
-.most-popular-payed-book-box-info p {
+.most-popular-played-book-box-info p {
   color: rgb(94, 93, 93);
   font-size: 15px;
 }
 
-.most-popular-payed-book-box-info > h4 {
+.most-popular-played-book-box-info > h4 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.most-popular-payed-book-box-info {
+.most-popular-played-book-box-info {
   margin-left: 10px;
   width: 100%;
 }
 
 @media (max-width: 1380px) {
-  .most-popular-payed-book-box {
+  .most-popular-played-book-box {
     width: 45%;
   }
 }
 
 @media (max-width: 1260px) {
-  .most-popular-payed-book-box-section-list {
+  .most-popular-played-book-box-section-list {
     flex-direction: column;
   }
 
-  .most-popular-payed-book-box {
+  .most-popular-played-book-box {
     width: 60%;
     margin-top: 10px;
   }
