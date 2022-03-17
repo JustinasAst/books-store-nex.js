@@ -66,23 +66,23 @@ export const AudioPlayer = () => {
       </div>
 
       <div className="player-button-box">
-        <button className="forward-backward-button">
+        <button type="button" className="forward-backward-button">
           <BsSkipBackwardFill />
         </button>
 
-        <button className="forward-backward-button">
+        <button type="button" className="forward-backward-button">
           <GrBackTen />
         </button>
 
-        <button className="pause-play-button" onClick={playPause}>
+        <button type="button" className="pause-play-button" onClick={playPause}>
           {isPlaying ? <GiPauseButton /> : <ImPlay3 />}
         </button>
 
-        <button className="forward-backward-button">
+        <button type="button" className="forward-backward-button">
           <GrForwardTen />
         </button>
 
-        <button className="forward-backward-button">
+        <button type="button" className="forward-backward-button">
           <BsFillSkipForwardFill />
         </button>
       </div>

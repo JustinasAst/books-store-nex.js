@@ -29,7 +29,7 @@ export const ListenedBookBox = () => {
       </div>
 
       <div className="play-button-box">
-        <button className="play-button">
+        <button type="button" className="play-button">
           <BsFillCaretRightFill />
         </button>
       </div>
