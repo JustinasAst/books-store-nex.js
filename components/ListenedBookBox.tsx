@@ -11,6 +11,7 @@ export const ListenedBookBox = () => {
           alt="Harry"
         />
       </div>
+
       <div className="book-title-box">
         <p>Continue reading</p>
         <h2>Harry Potter and the Phylosofers Stone</h2>
@@ -20,7 +21,7 @@ export const ListenedBookBox = () => {
 
         <div className="progres-value-box">
           <p>Chapters 8</p>
-          <p>90%</p>
+          <p> 90%</p>
         </div>
 
         <div className="progress-background">

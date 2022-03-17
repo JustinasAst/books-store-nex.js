@@ -8,14 +8,13 @@
   display: flex;
   background-color: var(--secondary);
   color: var(--primary);
-  min-height: 300px;
+  min-height: 400px;
   border-radius: 10px;
   justify-content: space-between;
   box-shadow: 0px 5px 3px 5px var(--solid-black);
 }
-
-.listened-book {
-  height: 200px;
+.listenedBook {
+  max-height: 300px;
   border-radius: 10px;
   box-shadow: 0px 2px 1px 3px var(--primary);
 }
@@ -51,7 +50,7 @@
 
 .book-title-box {
   flex: 4;
-  padding-top: 40px;
+  padding-top: 80px;
   margin-left: 15px;
 }
 
@@ -90,13 +89,17 @@
     padding: 20px;
   }
 
+  .book-title-box {
+    padding-top: 40px;
+  }
+
   .play-button-box {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 950px) {
-  .listened-book {
+  .listenedBook {
     height: 250px;
   }
 
