@@ -15,14 +15,12 @@
 }
 
 @media (max-width: 1150px) {
-  .container {
-  }
   .main {
     min-height: 100vh;
     margin: 0px 0px;
-
     display: flex;
   }
+
   .components {
     padding-left: 100px;
     padding-right: 10px;
@@ -34,6 +32,7 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .main {
     min-height: 100vh;
   }

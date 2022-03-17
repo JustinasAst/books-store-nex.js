@@ -42,10 +42,6 @@ export const AudioPlayer = () => {
     }
   };
 
-  // const changeRange = () => {
-  //   audioPlayer.current.currentTime = progressBar.current.value;
-  // };
-
   return (
     <div className="audio-player">
       <audio
@@ -58,7 +54,6 @@ export const AudioPlayer = () => {
         type="range"
         defaultValue={0}
         ref={progressBar}
-        // onChange={changeRange}
       />
       <div className="time-range">
         <div>{calculateTime(currentTime)}</div>

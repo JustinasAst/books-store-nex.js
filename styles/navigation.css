@@ -1,17 +1,24 @@
+:root {
+  --primary: rgb(255, 255, 255);
+  --secondary: rgb(83, 43, 228);
+  --solid-black: rgb(5, 5, 5);
+}
+
 .user-img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   object-fit: cover;
 }
+
 .navigation-off {
   display: none;
 }
+
 .navigation {
   width: 90px;
   position: absolute;
   display: block;
-  /* height: 100%; */
   max-height: max-content;
 }
 
@@ -38,21 +45,22 @@
   text-align: center;
   align-items: center;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--primary);
 }
+
 .navbar-nav > .nav-item:hover {
-  background-color: rgb(83, 43, 228);
+  background-color: var(--secondary);
   border-radius: 5px;
   transition: 150ms;
-  box-shadow: 0px 5px 3px 1px #000000;
-  color: #fff;
+  box-shadow: 0px 5px 3px 1px var(--solid-black);
+  color: var(--primary);
 }
 
 .user-nav-box > .lisen-item:hover {
-  background-color: rgb(83, 43, 228);
+  background-color: var(--secondary);
   border-radius: 100%;
   transition: 250ms;
-  color: #fff;
+  color: var(--secondary);
 }
 
 .nav-item {

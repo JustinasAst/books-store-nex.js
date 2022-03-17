@@ -14,7 +14,6 @@ interface ComponentPromps {
 
 const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
   return (
-    // <nav className={menuToggle ? 'navigation opened' : 'navigation'}>
     <nav className={`navigation ${menuToggle ? 'opened' : ''}`}>
       <ul className="navbar-nav">
         <div className="user-nav-box">
