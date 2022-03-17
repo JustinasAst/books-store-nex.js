@@ -40,7 +40,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                 <p className="reading-book-info-chapter">
                   Chapter Eight: Partners
                 </p>
-                <button className="chapter-list-button">
+                <button type="button" className="chapter-list-button">
                   <CgList style={{ marginRight: '5px' }} /> Chapter-list
                 </button>
               </div>

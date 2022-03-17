@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-.input-bell-box > .bell {
+.input-bell-box > .bell-icon {
   margin-left: 50px;
   color: rgb(97, 94, 94);
   margin-right: 20px;
@@ -45,7 +45,7 @@
     margin-bottom: 20px;
   }
 
-  .bell {
+  .bell-icon {
     display: none;
   }
 }

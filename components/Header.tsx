@@ -27,7 +27,7 @@ const Header: React.FC<ComponentPromps> = ({ menuTurnOn }) => {
           placeholder="Search books here"
         />
 
-        <p className="bell">
+        <p className="bell-icon">
           <VscBellDot />
         </p>
       </div>

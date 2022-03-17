@@ -1,4 +1,4 @@
-.recently-payed-book-box {
+.recently-played-book-box {
   width: 20%;
   cursor: pointer;
 }
@@ -18,34 +18,34 @@
   margin: 30px 0;
 }
 
-.recently-payed-book-box > img {
+.recently-played-book-box > img {
   border-radius: 15px;
   max-height: 100%;
   width: 100%;
 }
 
-.recently-payed-book-box > p {
+.recently-played-book-box > p {
   color: rgb(148, 145, 145);
 }
 
-.recently-payed-book-box > h3 {
+.recently-played-book-box > h3 {
   font-family: 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 1200px) {
-  .recently-payed-book-box {
+  .recently-played-book-box {
     width: 30%;
   }
 }
 
 @media (max-width: 900px) {
-  .recently-payed-book-box {
+  .recently-played-book-box {
     width: 45%;
   }
 }
 
 @media (max-width: 550px) {
-  .recently-payed-book-box {
+  .recently-played-book-box {
     width: 65%;
     text-align: center;
   }

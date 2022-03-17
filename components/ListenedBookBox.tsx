@@ -3,7 +3,7 @@ import { BsFillCaretRightFill } from 'react-icons/bs';
 
 export const ListenedBookBox = () => {
   return (
-    <div className="main-lestened-box">
+    <div className="main-listened-box">
       <div className="book-cover-box">
         <img
           className="listenedBook"
@@ -11,7 +11,6 @@ export const ListenedBookBox = () => {
           alt="Harry"
         />
       </div>
-
       <div className="book-title-box">
         <p>Continue reading</p>
         <h2>Harry Potter and the Phylosofers Stone</h2>

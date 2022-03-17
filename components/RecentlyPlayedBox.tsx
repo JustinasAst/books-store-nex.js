@@ -13,7 +13,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
       </div>
 
       <div className="book-list-section">
-        <div className="recently-payed-book-box" onClick={turnOn}>
+        <div className="recently-played-book-box" onClick={turnOn}>
           <img
             src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
             alt="games of thrones"
@@ -22,7 +22,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
           <p>Vardenis Pavardenis</p>
         </div>
 
-        <div className="recently-payed-book-box">
+        <div className="recently-played-book-box">
           <img
             src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
             alt="games of thrones"
@@ -31,7 +31,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
           <p>Vardenis Pavardenis</p>
         </div>
 
-        <div className="recently-payed-book-box">
+        <div className="recently-played-book-box">
           <img
             src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
             alt="games of thrones"
@@ -40,7 +40,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
           <p>Vardenis Pavardenis</p>
         </div>
 
-        <div className="recently-payed-book-box">
+        <div className="recently-played-book-box">
           <img
             src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
             alt="games of thrones"
