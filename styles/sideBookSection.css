@@ -5,8 +5,12 @@
 .side-book-section {
   background-color: rgb(247, 235, 212);
   border-radius: 10px;
-  box-sizing: border-box;
-  max-width: 600px;
+  max-width: 700px;
+  height: 100vh;
+}
+
+:nth-child() .heder-and-book-section {
+  top: 20px;
 }
 
 .side-book-section-header {
@@ -23,10 +27,12 @@
 .side-book-section-main-book {
   display: flex;
   height: 200px;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .reading-book-info {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .active-book-image {
@@ -65,7 +71,7 @@
 }
 
 .side-book-section-centering-section {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -73,10 +79,11 @@
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.5px;
   line-height: 2;
-  margin-top: 20px;
+  overflow: auto;
+  height: 65vh;
 }
 
-.book-text::first-letter {
+.book-text > p::first-letter {
   font-size: 350%;
   font-weight: bolder;
   padding: 13px 3px;
@@ -101,18 +108,23 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .side-book-section-main-book {
     display: block;
     height: 100%;
+    text-align: center;
   }
 
   .active-book-image {
-    width: 100%;
+    width: 80%;
   }
 
   .reading-book-info {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .book-text {
+    height: 450px;
   }
 }
