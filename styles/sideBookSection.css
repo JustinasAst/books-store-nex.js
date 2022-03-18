@@ -27,7 +27,6 @@
 .side-book-section-main-book {
   display: flex;
   height: 200px;
-  /* width: 380px; */
   width: 100%;
   padding-bottom: 20px;
 }
