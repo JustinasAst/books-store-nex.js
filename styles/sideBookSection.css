@@ -5,8 +5,8 @@
 .side-book-section {
   background-color: rgb(247, 235, 212);
   border-radius: 10px;
-  max-width: 600px;
-  height: 100%;
+  max-width: 700px;
+  height: 100vh;
 }
 
 :nth-child() .heder-and-book-section {
@@ -72,7 +72,7 @@
 }
 
 .side-book-section-centering-section {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -81,7 +81,7 @@
   letter-spacing: 0.5px;
   line-height: 2;
   overflow: auto;
-  height: 75vh;
+  height: 65vh;
 }
 
 .book-text > p::first-letter {
@@ -109,14 +109,15 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .side-book-section-main-book {
     display: block;
     height: 100%;
+    text-align: center;
   }
 
   .active-book-image {
-    width: 100%;
+    width: 80%;
   }
 
   .reading-book-info {
