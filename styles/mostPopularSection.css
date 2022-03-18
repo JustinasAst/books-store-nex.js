@@ -46,9 +46,9 @@
   width: 100%;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1850px) {
   .most-popular-played-book-box {
-    width: 45%;
+    width: 50%;
   }
 }
 
