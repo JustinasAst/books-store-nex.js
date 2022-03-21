@@ -8,13 +8,18 @@
   display: flex;
   background-color: var(--secondary);
   color: var(--primary);
-  min-height: 400px;
   border-radius: 10px;
   justify-content: space-between;
   box-shadow: 0px 5px 3px 5px var(--solid-black);
+  padding: 35px;
 }
+
+.chapter-percent {
+  color: rgb(169, 155, 219);
+}
+
 .listenedBook {
-  max-height: 300px;
+  max-height: 250px;
   border-radius: 10px;
   box-shadow: 0px 2px 1px 3px var(--primary);
 }
@@ -22,19 +27,13 @@
 .book-cover-box {
   display: flex;
   align-items: center;
-  margin-left: 50px;
-  flex: 1;
-}
-
-.book-title-box > h2 {
-  font-family: serif;
 }
 
 .play-button {
   height: 60px;
   width: 60px;
   background-color: var(--primary);
-  border-radius: 100%;
+  border-radius: 60px;
   border: none;
   cursor: pointer;
   box-shadow: 0px 3px 2px 3px var(--solid-black);
@@ -45,13 +44,22 @@
 .play-button-box {
   display: flex;
   align-items: center;
-  flex: 1;
+  padding: 0 20px;
 }
 
 .book-title-box {
-  flex: 4;
-  padding-top: 80px;
-  margin-left: 15px;
+  padding: 0 40px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.book-name {
+  font-size: 42px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 550;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .progress-value {
@@ -63,7 +71,7 @@
 }
 
 .progress-background {
-  background: rgb(136, 111, 230);
+  background: rgba(129, 185, 181, 0.596);
   justify-content: flex-start;
   border-radius: 10px;
   align-items: center;
@@ -82,34 +90,80 @@
   margin: 0 20px;
 }
 
-@media (max-width: 1340px) {
-  .main-listened-box {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+@media (max-width: 810px) {
+  .book-name {
+    font-size: 28px;
   }
 
-  .book-title-box {
-    padding-top: 40px;
+  .listenedBook {
+    max-height: 200px;
+  }
+
+  .main-listened-box {
+    padding: 25px;
   }
 
   .play-button-box {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .book-title-box {
+    padding: 0 25px;
   }
 }
 
-@media (max-width: 950px) {
-  .listenedBook {
-    height: 250px;
-  }
-
+@media (max-width: 690px) {
   .book-cover-box {
-    margin-left: 0px;
+    width: 100%;
   }
-}
 
-@media (max-width: 400px) {
+  .main-listened-box p {
+    font-size: 14px;
+  }
+
   .main-listened-box {
-    width: 96vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .play-button-box {
+    padding-top: 15px;
+  }
+
+  .book-title-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .book-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .main-listened-box {
+    padding: 25px;
+  }
+
+  .listenedBook {
+    height: 150px;
+  }
+
+  .book-name {
+    font-size: 26px;
+  }
+
+  .play-button {
+    height: 45px;
+    width: 45px;
+    background-color: var(--primary);
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 2px 3px var(--solid-black);
+    font-size: 20px;
+    margin: 0 auto;
   }
 }

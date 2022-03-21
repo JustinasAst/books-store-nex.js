@@ -91,7 +91,15 @@
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 550px) {
+  .navigation {
+    position: absolute;
+    z-index: 2;
+    display: none;
+  }
+}
+
+/* @media (max-width: 775px) {
   .navigation {
     width: 90px;
     height: 100%;
@@ -120,4 +128,4 @@
     display: block;
     margin-top: 20px;
   }
-}
+} */

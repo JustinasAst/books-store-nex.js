@@ -9,7 +9,13 @@
   position: relative;
   padding: 10px 0;
   justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
   z-index: 1;
+}
+
+.greeting {
+  font-weight: 500;
+  font-size: 32px;
 }
 
 .burger-menu {

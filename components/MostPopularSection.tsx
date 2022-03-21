@@ -10,7 +10,7 @@ const MostPopularSection = () => {
         <p>See All</p>
       </div>
 
-      <div className="most-popular-played-book-box-section-list">
+      {/* <div className="most-popular-played-book-box-section-list">
         <div className="most-popular-played-book-box">
           <img
             src="https://bags-of-books.co.uk/wp-content/uploads/2020/11/9780007458424.jpg"
@@ -73,7 +73,7 @@ const MostPopularSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

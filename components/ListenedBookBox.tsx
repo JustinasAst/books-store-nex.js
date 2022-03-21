@@ -14,14 +14,22 @@ export const ListenedBookBox = () => {
 
       <div className="book-title-box">
         <p>Continue reading</p>
-        <h2>Harry Potter and the Phylosofers Stone</h2>
+        <div className="book-name-container">
+          <h2
+            className="book-name"
+            title="Harry Potter and the Phylosofers Stone"
+          >
+            Harry Potter and the Phylosofers Stone
+          </h2>
+        </div>
+
         <p>
           John Roberts <span className="dot">•</span> 12 Chapters
         </p>
 
         <div className="progres-value-box">
-          <p>Chapters 8</p>
-          <p> 90%</p>
+          <p className="chapter-percent">Chapters 8</p>
+          <p className="chapter-percent"> 90%</p>
         </div>
 
         <div className="progress-background">

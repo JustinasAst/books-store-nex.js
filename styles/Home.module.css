@@ -2,6 +2,7 @@
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
+  background-color: rgb(249, 252, 252);
 }
 
 .components {
@@ -20,14 +21,29 @@
     margin: 0px 0px;
     display: flex;
   }
+}
 
+@media (max-width: 775px) {
   .components {
     padding-left: 100px;
     padding-right: 10px;
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 550px) {
+  .components {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* .components {
+    padding-left: 100px;
+    padding-right: 10px;
+  }
+} */
+
+/* @media (max-width: 775px) {
   .components {
     padding-left: 0px;
     padding-right: 0px;
@@ -42,4 +58,4 @@
   .components {
     padding: 5px;
   }
-}
+} */
