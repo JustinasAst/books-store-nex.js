@@ -36,16 +36,33 @@
 }
 
 .book-search-input {
-  border: none;
+  width: 200px;
   padding: 15px;
+  margin: 4px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  border: none;
+  border-radius: 10px;
 }
 
-.search-label {
+.search-imput-icon-box {
+  position: relative;
+}
+
+.search-imput-icon-box > i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  padding: 10px 10px;
+  color: #92989c;
+}
+
+/* .search-label {
   color: rgb(145, 140, 140);
   background-color: var(--primary);
   padding: 13px;
   cursor: pointer;
-}
+} */
 
 .search-imput-box.open {
   display: block;
@@ -59,7 +76,7 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .turn-on-search {
     display: block;
     color: rgb(145, 140, 140);
@@ -73,14 +90,23 @@
 
   .close-search {
     display: block;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(129, 125, 125);
+    height: 45px;
+    font-size: 25px;
   }
 
   .search-imput-box.open {
-    display: block;
-    background-color: orange;
-    width: 100%;
+    display: flex;
+    background-color: rgb(249, 252, 252);
     position: absolute;
+    justify-content: center;
+    align-items: center;
     left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 
   .bell-icon {

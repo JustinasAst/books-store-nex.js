@@ -30,15 +30,17 @@ const Header: React.FC<ComponentPromps> = ({
 
       <div className="input-bell-box">
         <div className={`search-imput-box ${searchToggle ? 'open' : ''} `}>
-          <label className="search-label">
-            <BsSearch />
-          </label>
+          <div className="search-imput-icon-box">
+            <i className="search-label">
+              <BsSearch />
+            </i>
 
-          <input
-            className="book-search-input"
-            type="text"
-            placeholder="Search books here"
-          />
+            <input
+              className="book-search-input"
+              type="text"
+              placeholder="Search books here"
+            />
+          </div>
 
           <button className="close-search" onClick={searchTurnOff}>
             <FaLongArrowAltUp />
