@@ -10,7 +10,7 @@ const MostPopularSection = () => {
         <p>See All</p>
       </div>
 
-      {/* <div className="most-popular-played-book-box-section-list">
+      <div className="most-popular-played-book-box-section-list">
         <div className="most-popular-played-book-box">
           <img
             src="https://bags-of-books.co.uk/wp-content/uploads/2020/11/9780007458424.jpg"
@@ -18,8 +18,8 @@ const MostPopularSection = () => {
           />
 
           <div className="most-popular-played-book-box-info">
-            <p>Vardas Pavarde</p>
-            <h4>Pavadinimas</h4>
+            <p className="author-name">Vardas Pavarde</p>
+            <h4 className="most-popular-book-name">Pavadinimas</h4>
 
             <div className="most-popular-played-book-box-time-rating">
               <p>
@@ -39,8 +39,8 @@ const MostPopularSection = () => {
           />
 
           <div className="most-popular-played-book-box-info">
-            <p>Vardas Pavarde</p>
-            <h4>Pavadinimas</h4>
+            <p className="author-name">Vardas Pavarde</p>
+            <h4 className="most-popular-book-name">Pavadinimas</h4>
 
             <div className="most-popular-played-book-box-time-rating">
               <p>
@@ -60,8 +60,8 @@ const MostPopularSection = () => {
           />
 
           <div className="most-popular-played-book-box-info">
-            <p>Vardas Pavarde</p>
-            <h4>Pavadinimas</h4>
+            <p className="author-name">Vardas Pavarde</p>
+            <h4 className="most-popular-book-name">Pavadinimas</h4>
 
             <div className="most-popular-played-book-box-time-rating">
               <p>
@@ -73,7 +73,7 @@ const MostPopularSection = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
