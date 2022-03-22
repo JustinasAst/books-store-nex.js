@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .burger-menu {
     display: block;
     cursor: pointer;

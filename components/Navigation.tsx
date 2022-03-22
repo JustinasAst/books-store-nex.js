@@ -41,9 +41,10 @@ const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
         <li className="navigation-item">
           <FiShoppingCart />
         </li>
-        <li className="navigation-item">
+        <li className="navigation-item person">
           <BsPerson />
         </li>
+
         <li className="navigation-item">
           <MdLogout />
         </li>
