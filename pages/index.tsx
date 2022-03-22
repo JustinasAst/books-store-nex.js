@@ -13,6 +13,7 @@ import { useState } from 'react';
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(true);
   const [menuToggle, setMenuToggle] = useState(false);
+  const [searchToggle, setSearchTogle] = useState(false);
 
   const turnOff = () => {
     setToggle(false);
@@ -30,6 +31,14 @@ const Home: NextPage = () => {
     setMenuToggle(false);
   };
 
+  const searchTurnOn = () => {
+    setSearchTogle(true);
+  };
+
+  const searchTurnOff = () => {
+    setSearchTogle(false);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -42,7 +51,12 @@ const Home: NextPage = () => {
         <Navigation menuTurnOff={menuTurnOff} menuToggle={menuToggle} />
 
         <div className={styles.components}>
-          <Header menuTurnOn={menuTurnOn} />
+          <Header
+            menuTurnOn={menuTurnOn}
+            searchTurnOn={searchTurnOn}
+            searchToggle={searchToggle}
+            searchTurnOff={searchTurnOff}
+          />
           <ListenedBookBox />
           <RecentlyPlayedBox turnOn={turnOn} />
           <MostPopularSection />

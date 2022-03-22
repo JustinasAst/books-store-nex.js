@@ -10,7 +10,7 @@
   padding: 10px 0;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
-  z-index: 1;
+  z-index: -0;
 }
 
 .greeting {
@@ -28,28 +28,59 @@
   justify-content: space-between;
 }
 
-.input-bell-box > .bell-icon {
+.bell-icon {
   margin-left: 50px;
   color: rgb(97, 94, 94);
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .book-search-input {
   border: none;
-  padding: 10px;
+  padding: 15px;
 }
 
 .search-label {
   color: rgb(145, 140, 140);
   background-color: var(--primary);
-  padding: 8px;
+  padding: 13px;
+  cursor: pointer;
 }
 
-@media (max-width: 1220px) {
-  .header-box {
-    flex-direction: column;
-    margin-bottom: 20px;
+.search-imput-box.open {
+  display: block;
+}
+
+.close-search {
+  display: none;
+}
+
+.turn-on-search {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .turn-on-search {
+    display: block;
+    color: rgb(145, 140, 140);
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .search-imput-box {
+    display: none;
+  }
+
+  .close-search {
+    display: block;
+  }
+
+  .search-imput-box.open {
+    display: block;
+    background-color: orange;
+    width: 100%;
+    position: absolute;
+    left: 0;
   }
 
   .bell-icon {
@@ -60,9 +91,72 @@
 @media (max-width: 550px) {
   .burger-menu {
     display: block;
+    color: rgb(145, 140, 140);
+  }
+  .burger {
+    display: block;
+    color: rgb(145, 140, 140);
     cursor: pointer;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 475px) {
+  .greeting {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  .burger {
+    font-size: 22px;
+  }
+
+  .turn-on-search {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 440px) {
+  .greeting {
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .burger {
     font-size: 20px;
-    text-align: left;
-    width: 100%;
+  }
+
+  .turn-on-search {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 385px) {
+  .greeting {
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+  .burger {
+    font-size: 20px;
+  }
+
+  .turn-on-search {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 365px) {
+  .greeting {
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .burger {
+    font-size: 16px;
+  }
+
+  .turn-on-search {
+    font-size: 14px;
   }
 }

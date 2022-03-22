@@ -7,23 +7,16 @@
 .user-img {
   width: 60px;
   height: 60px;
-  border-radius: 100%;
+  border-radius: 50px;
   object-fit: cover;
 }
 
-.navigation-off {
-  display: none;
-}
-
-.logout-box {
-}
-
 .navigation {
-  /* width: 100px; */
   position: fixed;
   display: flex;
   bottom: 0;
   top: 0;
+  z-index: 2;
 }
 
 .nagivation.opened {
@@ -31,13 +24,12 @@
 }
 
 .user-navigation-box {
-  /* background-color: aqua; */
   border-bottom: 1px solid rgb(206, 201, 201);
 }
 
 .user-navigation-box > .navigation-item {
   font-size: 35px;
-  margin: 40px 20px;
+  margin: 45px 0px;
 }
 
 .navbar {
@@ -48,7 +40,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 120px;
+  width: 100px;
   overflow: auto;
   background-color: var(--primary);
 }
@@ -65,15 +57,15 @@
   background-color: var(--secondary);
   border-radius: 100px;
   transition: 250ms;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .navigation-item {
   cursor: pointer;
   color: rgb(112, 108, 108);
   background-color: none;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,11 +84,6 @@
 .person {
   margin-bottom: 90px;
 }
-
-/* @media (max-width: 600px) {
- 
-  
-} */
 
 @media (max-width: 550px) {
   .navigation {
@@ -119,41 +106,4 @@
   .user-navigation-box li {
     margin-top: 0px;
   }
-
-  .user-navigation-box {
-  }
-
-  .user-navigation-box > .navigation-item {
-  }
 }
-
-/* @media (max-width: 775px) {
-  .navigation {
-    width: 90px;
-    height: 100%;
-    position: relative;
-  }
-}
-
-@media (max-width: 850px) {
-  .navigation-item {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .navigation {
-    position: absolute;
-    z-index: 2;
-    display: none;
-  }
-
-  .navigation.opened {
-    display: block;
-  }
-
-  .exit-navigation {
-    display: block;
-    margin-top: 20px;
-  }
-} */
