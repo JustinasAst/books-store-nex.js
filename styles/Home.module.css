@@ -3,6 +3,11 @@
   box-sizing: border-box;
   display: flex;
   background-color: rgb(249, 252, 252);
+  padding-right: 450px;
+}
+
+.secondMain {
+  padding-right: 0px;
 }
 
 .components {
@@ -11,22 +16,15 @@
   padding-right: 30px;
 }
 
-.sideSection {
-  margin: 20px;
-}
-
-@media (max-width: 1150px) {
+@media (max-width: 1350px) {
   .main {
-    min-height: 100vh;
-    margin: 0px 0px;
-    display: flex;
+    padding-right: 0px;
   }
 }
 
 @media (max-width: 775px) {
   .components {
     padding-left: 120px;
-    padding-right: 10px;
   }
 }
 

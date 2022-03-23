@@ -5,8 +5,9 @@
 .side-book-section {
   background-color: rgb(247, 235, 212);
   border-radius: 10px;
-  max-width: 700px;
-  height: 100vh;
+  max-width: 450px;
+  position: fixed;
+  display: block;
 }
 
 :nth-child() .heder-and-book-section {

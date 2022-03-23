@@ -119,7 +119,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
           <AudioPlayer />
         </div>
       ) : (
-        <div></div>
+        ''
       )}
     </>
   );

@@ -31,7 +31,7 @@ const Header: React.FC<ComponentPromps> = ({
       <div className="input-bell-box">
         <div className={`search-imput-box ${searchToggle ? 'open' : ''} `}>
           <div className="search-imput-icon-box">
-            <i className="search-label">
+            <i className="icon-inside">
               <BsSearch />
             </i>
 

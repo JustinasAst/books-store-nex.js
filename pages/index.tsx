@@ -11,7 +11,7 @@ import SideBookSection from '../components/SideBookSection';
 import { useState } from 'react';
 
 const Home: NextPage = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [searchToggle, setSearchTogle] = useState(false);
 
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
   const searchTurnOff = () => {
     setSearchTogle(false);
   };
-
+  // style={{ paddingRight: toggle ? '400px' : '' }}
   return (
     <div className={styles.container}>
       <Head>
@@ -47,7 +47,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main
+        className={[styles.main, !toggle ? styles.secondMain : ' '].join(' ')}
+      >
         <Navigation menuTurnOff={menuTurnOff} menuToggle={menuToggle} />
 
         <div className={styles.components}>
