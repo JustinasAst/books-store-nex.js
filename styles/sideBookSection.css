@@ -5,7 +5,7 @@
 .side-book-section {
   background-color: rgb(247, 235, 212);
   border-radius: 10px;
-  max-width: 450px;
+  max-width: 500px;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
 
 .side-book-section-main-book {
   display: flex;
-  height: 200px;
+  height: 220px;
 }
 
 .reading-book-info {
@@ -59,13 +59,14 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 15px;
-  padding: 22px;
+  font-size: 18px;
+  padding: 26px;
+  margin-top: 30px;
 }
 
 .reading-book-info-title {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 28px;
+  font-size: 32px;
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -81,7 +82,7 @@
 .reading-book-info-chapter {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -89,7 +90,7 @@
 }
 
 .side-book-section-centering-section {
-  padding: 20px 20px 0 20px;
+  padding: 40px 40px 0 40px;
 }
 
 .book-text {
@@ -97,8 +98,7 @@
   letter-spacing: 0.5px;
   line-height: 2;
   overflow: auto;
-  padding: 25px;
-
+  padding: 40px;
   margin-bottom: 25px;
 }
 
@@ -115,10 +115,38 @@
 }
 
 .audio-player-box {
-  bottom: 0;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: rgb(247, 235, 212);
+  padding: 0 10px 0 10px;
+}
+
+@media (max-width: 1850px) {
+  /* .side-book-section {
+    max-width: 450px;
+  } */
+
+  /* .reading-book-info-title {
+    font-size: 28px;
+  }
+
+  .reading-book-info-chapter {
+    font-size: 16px;
+  }
+
+  .side-book-section-main-book {
+    height: 200px;
+  }
+
+  .chapter-list-button {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .book-text {
+    padding: 30px;
+  }
+
+  .side-book-section-centering-section {
+    padding: 30px 30px 0 30px;
+  } */
 }
 
 @media (max-width: 850px) {

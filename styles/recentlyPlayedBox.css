@@ -1,13 +1,18 @@
 .recently-played-book-box {
-  width: 20%;
   cursor: pointer;
+  width: 300px;
+  padding: 0 10px 0 10px;
 }
 
 .book-list-section {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   margin: 0 auto;
+}
+
+.side-book-section-image {
+  height: 400px;
 }
 
 .recently-played-book-section-header {
@@ -20,8 +25,8 @@
 
 .recently-played-book-box > img {
   border-radius: 15px;
-  max-height: 100%;
-  width: 100%;
+  max-height: 300px;
+  width: 250px;
 }
 
 .recently-played-book-box > p {
@@ -32,15 +37,46 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .recently-played-book-box {
     width: 30%;
+  }
+  .recently-played-book-box > img {
+    max-height: 250px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .recently-played-book-box > img {
+    max-height: 200px;
+    width: 160px;
   }
 }
 
 @media (max-width: 900px) {
+  /* .book-list-section {
+    flex-direction: column;
+  } */
+
+  .recently-played-book-box > img {
+    max-height: 250px;
+    width: 230px;
+  }
+
+  .book-list-section {
+    flex-wrap: wrap;
+  }
+
   .recently-played-book-box {
-    width: 45%;
+    width: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 665px) {
+  .recently-played-book-box {
+    margin: 0 auto;
   }
 }
 
@@ -54,5 +90,12 @@
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .recently-played-book-box > img {
+    max-height: 200px;
+    width: 180px;
   }
 }

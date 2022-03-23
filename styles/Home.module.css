@@ -3,17 +3,40 @@
   box-sizing: border-box;
   display: flex;
   background-color: rgb(249, 252, 252);
-  padding-right: 470px;
+  padding-right: 520px;
 }
 
 .secondMain {
   padding-right: 0px;
+  width: 1700px;
+  margin: 0 auto;
 }
 
 .components {
   width: 100%;
   padding-left: 150px;
   padding-right: 30px;
+}
+
+/* @media (max-width: px) { */
+/* .main {
+    padding-right: 470px;
+  } */
+
+/* .main {
+    padding-right: 0px;
+  }
+  .secondMain {
+    padding-right: 0px;
+  }
+} */
+
+@media (max-width: 1700px) {
+  .secondMain {
+    padding-right: 0px;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1350px) {

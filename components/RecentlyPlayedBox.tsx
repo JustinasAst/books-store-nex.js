@@ -28,13 +28,17 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
       </div>
 
       <div className="book-list-section">
-        {booksData.map((item, id) => (
+        {booksData.slice(0, 4).map((item, id) => (
           <div
             key={item.id}
             className="recently-played-book-box"
             onClick={turnOn}
           >
-            <img src={`${item.img}`} alt="games of thrones" />
+            <img
+              className="side-book-section-image"
+              src={`${item.img}`}
+              alt={item.title}
+            />
             <h3>{item.title}</h3>
             <p>{`${item.name} ${item.surname}`}</p>
           </div>
