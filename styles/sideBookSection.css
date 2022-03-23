@@ -7,11 +7,13 @@
   border-radius: 10px;
   max-width: 450px;
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
   top: 0;
   bottom: 0;
   right: 0;
   margin: 20px;
+  overflow: auto;
 }
 
 :nth-child() .heder-and-book-section {
@@ -96,7 +98,8 @@
   line-height: 2;
   overflow: auto;
   padding: 25px;
-  height: 65vh;
+
+  margin-bottom: 25px;
 }
 
 .book-text > p::first-letter {
@@ -111,21 +114,55 @@
   margin: 0;
 }
 
+.audio-player-box {
+  bottom: 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(247, 235, 212);
+}
+
 @media (max-width: 850px) {
   .side-book-section {
     box-sizing: border-box;
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 575px) {
   .side-book-section {
+    max-width: 575px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 }
 
-@media (max-width: 575px) {
-  .book-text {
-    height: 450px;
+@media (max-width: 472px) {
+  .reading-book-info-title {
+    font-size: 24px;
   }
-  .side-book-section {
+
+  .reading-book-info-chapter {
+    font-size: 16px;
+  }
+
+  .side-book-section-main-book {
+    height: 180px;
+  }
+
+  .reading-book-info {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 410px) {
+  .side-book-section-main-book {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  .active-book-image {
+    height: 250px;
   }
 }

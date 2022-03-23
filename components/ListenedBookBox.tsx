@@ -24,7 +24,8 @@ export const ListenedBookBox = () => {
         </div>
 
         <p>
-          John Roberts <span className="dot">•</span> 12 Chapters
+          <span>John Roberts</span> <span className="dot">•</span>
+          <span>12 Chapters</span>
         </p>
 
         <div className="progres-value-box">
@@ -32,8 +33,15 @@ export const ListenedBookBox = () => {
           <p className="chapter-percent"> 90%</p>
         </div>
 
-        <div className="progress-background">
-          <div className="progress-value"></div>
+        <div className="progress-bar-container">
+          <div className="progress-background">
+            <div className="progress-value"></div>
+          </div>
+          <div className="play-button-box-phone">
+            <button type="button" className="play-button">
+              <BsFillCaretRightFill />
+            </button>
+          </div>
         </div>
       </div>
 

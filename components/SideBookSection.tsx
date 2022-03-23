@@ -112,8 +112,9 @@ export const SideBookSection: React.FC<ComponentProps> = ({
               nulla, suscipit asperiores, fuga possimus cupiditate autem minima
             </p>
           </div>
-
-          <AudioPlayer />
+          <div className="audio-player-box">
+            <AudioPlayer />
+          </div>
         </div>
       ) : (
         ''
