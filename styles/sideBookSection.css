@@ -8,6 +8,10 @@
   max-width: 450px;
   position: fixed;
   display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
 }
 
 :nth-child() .heder-and-book-section {
@@ -17,23 +21,25 @@
 .side-book-section-header {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
 }
 
 .side-book-section-header > p {
   color: rgb(104, 102, 102);
   cursor: pointer;
+  margin: 20px 0 30px;
 }
 
 .side-book-section-main-book {
   display: flex;
   height: 200px;
-  width: 100%;
-  padding-bottom: 20px;
 }
 
 .reading-book-info {
   margin-left: 20px;
+  display: block;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .active-book-image {
@@ -52,11 +58,16 @@
   justify-content: center;
   font-weight: 500;
   font-size: 15px;
+  padding: 22px;
 }
 
 .reading-book-info-title {
   font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .reading-book-info-author {
@@ -68,12 +79,15 @@
 .reading-book-info-chapter {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .side-book-section-centering-section {
-  width: 85%;
-  margin: 0 auto;
+  padding: 20px 20px 0 20px;
 }
 
 .book-text {
@@ -81,6 +95,7 @@
   letter-spacing: 0.5px;
   line-height: 2;
   overflow: auto;
+  padding: 25px;
   height: 65vh;
 }
 
@@ -92,40 +107,25 @@
   float: left;
 }
 
+.chapter-text {
+  margin: 0;
+}
+
 @media (max-width: 850px) {
   .side-book-section {
     box-sizing: border-box;
-    max-width: 100%;
-    min-height: 100vh;
   }
 }
 
 @media (max-width: 775px) {
   .side-book-section {
-    max-width: 90%;
-    position: absolute;
-    left: 5%;
-    z-index: 3;
   }
 }
 
-@media (max-width: 450px) {
-  .side-book-section-main-book {
-    display: block;
-    height: 100%;
-    text-align: center;
-  }
-
-  .active-book-image {
-    width: 80%;
-  }
-
-  .reading-book-info {
-    margin: 0 auto;
-    text-align: center;
-  }
-
+@media (max-width: 575px) {
   .book-text {
     height: 450px;
+  }
+  .side-book-section {
   }
 }

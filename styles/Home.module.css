@@ -3,7 +3,7 @@
   box-sizing: border-box;
   display: flex;
   background-color: rgb(249, 252, 252);
-  padding-right: 450px;
+  padding-right: 470px;
 }
 
 .secondMain {
@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
   .components {
     padding-left: 10px;
     padding-right: 10px;
