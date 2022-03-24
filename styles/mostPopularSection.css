@@ -1,5 +1,5 @@
 .most-popular-played-book-section {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .most-popular-played-book-section-header {
@@ -12,14 +12,14 @@
 .most-popular-played-book-box {
   display: flex;
   width: 30%;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: space-between;
+  height: 140px;
 }
 
 .most-popular-played-book-box > img {
   border-radius: 10px;
   width: 100px;
-  /* height: 100%; */
 }
 
 .most-popular-played-book-box-section-list {
@@ -47,6 +47,11 @@
   margin-left: 20px;
   font-size: 20px;
   width: 100%;
+}
+
+.most-popular-see-all-link {
+  color: rgb(132, 69, 250);
+  font-weight: 500;
 }
 
 @media (max-width: 1050px) {

@@ -1,5 +1,4 @@
 .main {
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   background-color: rgb(249, 252, 252);
@@ -17,19 +16,6 @@
   padding-left: 150px;
   padding-right: 30px;
 }
-
-/* @media (max-width: px) { */
-/* .main {
-    padding-right: 470px;
-  } */
-
-/* .main {
-    padding-right: 0px;
-  }
-  .secondMain {
-    padding-right: 0px;
-  }
-} */
 
 @media (max-width: 1700px) {
   .secondMain {
@@ -57,26 +43,3 @@
     padding-right: 10px;
   }
 }
-
-/* .components {
-    padding-left: 100px;
-    padding-right: 10px;
-  }
-} */
-
-/* @media (max-width: 775px) {
-  .components {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .main {
-    min-height: 100vh;
-  }
-}
-
-@media (max-width: 400px) {
-  .components {
-    padding: 5px;
-  }
-} */

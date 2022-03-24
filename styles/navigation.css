@@ -85,6 +85,10 @@
   margin-bottom: 90px;
 }
 
+.navigation-item.bell-icon {
+  display: none;
+}
+
 @media (max-width: 575px) {
   .navigation {
     position: fixed;

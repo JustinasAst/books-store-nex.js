@@ -13,7 +13,7 @@ export const ListenedBookBox = () => {
       </div>
 
       <div className="book-title-box">
-        <p>Continue reading</p>
+        <p className="continue-reading-title">Continue reading</p>
         <div className="book-name-container">
           <h2
             className="book-name"
@@ -23,11 +23,11 @@ export const ListenedBookBox = () => {
           </h2>
         </div>
 
-        <p>
-          <span className="author-name">John Roberts</span>{' '}
+        <div className="author-and-chapter-title ">
+          <span className="author-name">John Roberts</span>
           <span className="dot">•</span>
           <span className="book-chapter">12 Chapters</span>
-        </p>
+        </div>
 
         <div className="progres-value-box">
           <p className="chapter-percent">Chapters 8</p>

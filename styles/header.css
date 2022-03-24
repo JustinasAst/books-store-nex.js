@@ -14,8 +14,9 @@
 }
 
 .greeting {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 32px;
+  color: rgb(54, 53, 53);
 }
 
 .burger-menu {
@@ -111,6 +112,10 @@
 
   .bell-icon {
     display: none;
+  }
+
+  .navigation-item.bell-icon {
+    display: block;
   }
 }
 
