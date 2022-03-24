@@ -138,6 +138,51 @@
 }
 
 @media (max-width: 690px) {
+  .progress-bar-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .play-button-box {
+    display: none;
+  }
+
+  .play-button-box-phone {
+    display: block;
+    padding-left: 10px;
+    padding: 3px 3px 3px 10px;
+  }
+
+  .play-button {
+    height: 30px;
+    width: 30px;
+    box-shadow: 0px 2px 1px 2px var(--solid-black);
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .book-cover-box img {
+    height: 180px;
+  }
+
+  .book-chapter {
+    font-size: 15px;
+  }
+
+  .author-name {
+    font-size: 15px;
+  }
+
+  .dot {
+    margin: 0 10px;
+  }
+
+  .progres-value-box {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 450px) {
   .book-cover-box {
     width: 100%;
   }
@@ -191,13 +236,6 @@
   }
 
   .play-button {
-    height: 30px;
-    width: 30px;
-    background-color: var(--primary);
-    border-radius: 100%;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 2px 1px 2px var(--solid-black);
     font-size: 20px;
     margin: 0 auto;
   }

@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .book-list-section {
     height: 450px;
     overflow-y: scroll;
@@ -140,11 +140,28 @@
 
   .recently-played-book-box {
     width: 150px;
-    height: 200px;
   }
 
   .recently-played-book-box img {
     width: 150px;
     height: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .book-list-section {
+    height: 410px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(247, 244, 250);
+    scrollbar-width: thin;
+  }
+
+  .recently-played-book-box {
+    width: 120px;
+  }
+
+  .recently-played-book-box img {
+    width: 150px;
+    height: 170px;
   }
 }

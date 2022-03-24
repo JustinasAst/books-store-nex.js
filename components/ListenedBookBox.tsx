@@ -24,8 +24,9 @@ export const ListenedBookBox = () => {
         </div>
 
         <p>
-          <span>John Roberts</span> <span className="dot">•</span>
-          <span>12 Chapters</span>
+          <span className="author-name">John Roberts</span>{' '}
+          <span className="dot">•</span>
+          <span className="book-chapter">12 Chapters</span>
         </p>
 
         <div className="progres-value-box">
