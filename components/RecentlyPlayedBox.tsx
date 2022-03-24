@@ -14,11 +14,13 @@ export interface IBooks {
 interface ComponentProps {
   turnOn: () => void;
   booksData: IBooks[];
+  toggle: boolean;
 }
 
 export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
   turnOn,
   booksData,
+  toggle,
 }) => {
   return (
     <div className="recently-played-book-section">
@@ -31,7 +33,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
         {booksData.slice(0, 4).map((item, id) => (
           <div
             key={item.id}
-            className="recently-played-book-box"
+            className={`recently-played-book-box ${toggle ? 'open' : ''} `}
             onClick={turnOn}
           >
             <img
@@ -43,34 +45,6 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
             <p>{`${item.name} ${item.surname}`}</p>
           </div>
         ))}
-
-        {/* 
-        <div className="recently-played-book-box">
-          <img
-            src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
-            alt="games of thrones"
-          />
-          <h3>Games of Thrones</h3>
-          <p>Vardenis Pavardenis</p>
-        </div>
-
-        <div className="recently-played-book-box">
-          <img
-            src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
-            alt="games of thrones"
-          />
-          <h3>Games of Thrones</h3>
-          <p>Vardenis Pavardenis</p>
-        </div>
-
-        <div className="recently-played-book-box">
-          <img
-            src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
-            alt="games of thrones"
-          />
-          <h3>Games of Thrones</h3>
-          <p>Vardenis Pavardenis</p>
-        </div> */}
       </div>
     </div>
   );

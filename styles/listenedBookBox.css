@@ -175,6 +175,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 30px;
   }
 
   .main-listened-box {

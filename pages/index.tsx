@@ -79,7 +79,11 @@ const Home: NextPage = () => {
             searchTurnOff={searchTurnOff}
           />
           <ListenedBookBox />
-          <RecentlyPlayedBox turnOn={turnOn} booksData={booksData} />
+          <RecentlyPlayedBox
+            turnOn={turnOn}
+            booksData={booksData}
+            toggle={toggle}
+          />
           <MostPopularSection />
         </div>
 

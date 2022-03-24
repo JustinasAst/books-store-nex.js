@@ -34,6 +34,7 @@
 .side-book-section-main-book {
   display: flex;
   height: 220px;
+  padding-bottom: 10px;
 }
 
 .reading-book-info {
@@ -66,7 +67,7 @@
 
 .reading-book-info-title {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -82,7 +83,7 @@
 .reading-book-info-chapter {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -118,35 +119,32 @@
   padding: 0 10px 0 10px;
 }
 
-@media (max-width: 1850px) {
-  /* .side-book-section {
-    max-width: 450px;
+@media (max-width: 1530px) {
+  /* .book-name {
+    font-size: 36px;
   } */
+}
 
-  /* .reading-book-info-title {
-    font-size: 28px;
+@media (max-width: 1335px) {
+  .side-book-section {
+    max-width: 450px;
   }
 
-  .reading-book-info-chapter {
-    font-size: 16px;
+  .side-book-section-centering-section {
+    padding: 25px 25px 0 25px;
   }
 
   .side-book-section-main-book {
+    display: flex;
     height: 200px;
   }
 
   .chapter-list-button {
+    height: 40px;
+    font-weight: 500;
     font-size: 16px;
     padding: 20px;
   }
-
-  .book-text {
-    padding: 30px;
-  }
-
-  .side-book-section-centering-section {
-    padding: 30px 30px 0 30px;
-  } */
 }
 
 @media (max-width: 850px) {
@@ -167,7 +165,7 @@
 
 @media (max-width: 472px) {
   .reading-book-info-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .reading-book-info-chapter {
@@ -181,16 +179,55 @@
   .reading-book-info {
     margin-left: 10px;
   }
+
+  .chapter-list-button {
+    height: 20px;
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 410px) {
-  .side-book-section-main-book {
-    display: block;
-    height: auto;
-    text-align: center;
+  .active-book-image {
+    height: 130px;
   }
 
-  .active-book-image {
-    height: 250px;
+  .audio-player {
+    padding-top: 0px;
+  }
+
+  .chapter-list-button {
+    height: 10px;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 0px;
+    width: 100px;
+  }
+
+  .reading-book-info-title {
+    font-size: 18px;
+  }
+
+  .reading-book-info-chapter {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .reading-book-info-author {
+    margin: 6px 0;
+    font-size: 12px;
+  }
+
+  .book-text {
+    padding: 20px;
+  }
+
+  .side-book-section-main-book {
+    height: 140px;
+  }
+
+  .side-book-section-header {
+    height: 60px;
   }
 }
