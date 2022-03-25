@@ -89,7 +89,7 @@
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 650px) {
   .navigation {
     position: fixed;
     z-index: 2;

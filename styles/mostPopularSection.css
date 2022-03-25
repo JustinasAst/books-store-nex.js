@@ -54,9 +54,17 @@
   font-weight: 500;
 }
 
+.most-popular-title {
+  font-size: 28px;
+}
+
 @media (max-width: 1050px) {
   .most-popular-played-book-box-section-list {
     flex-direction: column;
+  }
+
+  .most-popular-title {
+    font-size: 22px;
   }
 
   .most-popular-played-book-box {

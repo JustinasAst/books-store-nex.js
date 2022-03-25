@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 650px) {
   .components {
     padding-left: 10px;
     padding-right: 10px;

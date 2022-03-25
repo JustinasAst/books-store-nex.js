@@ -25,7 +25,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
   return (
     <div className="recently-played-book-section">
       <div className="recently-played-book-section-header">
-        <h3>Recently Played</h3>
+        <h3 className="recently-played-title">Recently Played</h3>
         <a className="recently-payed-all-link" href="#">
           See All
         </a>

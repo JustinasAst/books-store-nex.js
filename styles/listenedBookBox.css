@@ -11,7 +11,7 @@
   border-radius: 10px;
   justify-content: space-between;
   box-shadow: 0px 5px 3px 5px var(--solid-black);
-  padding: 35px;
+  padding: 30px 40px;
 }
 
 .chapter-percent {
@@ -127,7 +127,6 @@
   }
 
   .main-listened-box {
-    padding: 25px;
   }
 
   .play-button-box {
@@ -150,9 +149,17 @@
     height: 50px;
     width: 50px;
   }
+
+  .continue-reading-title {
+    font-size: 15px;
+  }
+
+  .book-name {
+    margin: 8px 0;
+  }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 720px) {
   .progress-bar-container {
     display: flex;
     align-items: center;
@@ -176,10 +183,6 @@
     margin: 0 auto;
   }
 
-  .book-cover-box img {
-    height: 180px;
-  }
-
   .book-chapter {
     font-size: 15px;
   }
@@ -194,6 +197,16 @@
 
   .progres-value-box {
     padding-right: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-listened-box {
+    padding: 20px 30px;
+  }
+
+  .author-and-chapter-title > span {
+    font-size: 12px;
   }
 }
 
@@ -236,10 +249,6 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 30px;
-  }
-
-  .main-listened-box {
-    padding: 25px;
   }
 
   .listenedBook {

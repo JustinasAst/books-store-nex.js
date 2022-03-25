@@ -6,7 +6,7 @@ const MostPopularSection = () => {
   return (
     <div className="most-popular-played-book-section">
       <div className="most-popular-played-book-section-header">
-        <h3>Most Popular</h3>
+        <h3 className="most-popular-title">Most Popular</h3>
         <p className="most-popular-see-all-link">See All</p>
       </div>
 

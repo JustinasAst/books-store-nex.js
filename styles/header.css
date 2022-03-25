@@ -119,7 +119,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 650px) {
   .burger-menu {
     display: block;
     color: rgb(145, 140, 140);
