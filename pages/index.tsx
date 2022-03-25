@@ -11,15 +11,6 @@ import SideBookSection from '../components/SideBookSection';
 import { useState, useEffect } from 'react';
 import { stringify } from 'querystring';
 
-// interface booksState {
-//   userId: number;
-//   id: number;
-//   name: string;
-//   surname: string;
-//   title: string;
-//   body: string;
-// }
-
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
@@ -84,7 +75,7 @@ const Home: NextPage = () => {
             booksData={booksData}
             toggle={toggle}
           />
-          <MostPopularSection />
+          <MostPopularSection booksData={booksData} />
         </div>
 
         <div className={styles.sideSection}>
