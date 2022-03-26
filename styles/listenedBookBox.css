@@ -18,8 +18,8 @@
   color: rgb(169, 155, 219);
 }
 
-.listenedBook {
-  max-height: 250px;
+.listened-book {
+  max-height: 270px;
   border-radius: 10px;
   box-shadow: 0px 2px 1px 3px var(--primary);
 }
@@ -112,7 +112,7 @@
   .book-name {
     font-size: 30px;
   }
-  .listenedBook {
+  .listened-book {
     height: 200px;
   }
 }
@@ -122,7 +122,7 @@
     font-size: 28px;
   }
 
-  .listenedBook {
+  .listened-book {
     max-height: 200px;
   }
 
@@ -251,7 +251,7 @@
     font-size: 30px;
   }
 
-  .listenedBook {
+  .listened-book {
     height: 150px;
   }
 
@@ -267,4 +267,7 @@
   .progres-value-box {
     padding-right: 40px;
   }
+}
+
+@media (max-height: 600px) {
 }

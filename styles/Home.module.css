@@ -7,14 +7,13 @@
 
 .secondMain {
   padding-right: 0px;
-  width: 1700px;
-  margin: 0 auto;
 }
 
 .components {
-  width: 100%;
   padding-left: 150px;
   padding-right: 30px;
+  width: 1700px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1700px) {
@@ -23,11 +22,15 @@
     width: auto;
     margin: 0 auto;
   }
-}
 
-@media (max-width: 1700px) {
   .main {
     padding-right: 0px;
+  }
+}
+
+@media (max-width: 1325px) {
+  .components {
+    width: 100%;
   }
 }
 

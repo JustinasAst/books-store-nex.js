@@ -6,7 +6,7 @@ export const ListenedBookBox = () => {
     <div className="main-listened-box">
       <div className="book-cover-box">
         <img
-          className="listenedBook"
+          className="listened-book"
           src="https://cdn.waterstones.com/bookjackets/large/9781/4088/9781408855652.jpg"
           alt="Harry"
         />

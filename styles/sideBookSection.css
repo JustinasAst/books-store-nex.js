@@ -119,6 +119,20 @@
   padding: 0 10px 0 10px;
 }
 
+.test {
+  display: block;
+  overflow: auto;
+}
+
+@media (max-height: 500px) {
+  .test {
+    height: 300px;
+  }
+  .audio-player-box {
+    background-color: rgb(247, 235, 212);
+  }
+}
+
 @media (max-width: 1530px) {
   /* .book-name {
     font-size: 36px;

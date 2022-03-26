@@ -15,6 +15,7 @@
   margin-top: 10px;
   justify-content: space-between;
   height: 140px;
+  overflow: hidden;
 }
 
 .most-popular-played-book-box > img {
@@ -41,6 +42,9 @@
 .most-popular-book-name {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .most-popular-played-book-box-info {
