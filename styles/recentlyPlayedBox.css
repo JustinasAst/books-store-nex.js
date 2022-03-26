@@ -1,7 +1,7 @@
 .recently-played-book-box {
   cursor: pointer;
   width: 300px;
-  margin: 10px 20px;
+  margin: 10px 15px;
 }
 .test {
   display: none;
@@ -106,15 +106,6 @@
     height: 230px;
     width: 180px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 180px;
-  }
-
-  .side-book-section-image > .recently-played-book-box.open {
-    height: 230px;
-    width: 180px;
-  } */
 }
 
 @media (max-width: 1050px) {
@@ -140,23 +131,6 @@
     height: 250px;
     width: 200px;
   }
-
-  /* .recently-played-book-box.open:last-child {
-    display: none;
-  }
-
-  .book-list-section.open :nth-last-child(2) {
-    margin-right: 0 !important;
-  }
-
-  .recently-played-book-box.open {
-    width: 200px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 250px;
-    width: 200px;
-  } */
 }
 
 @media (max-width: 860px) {
@@ -176,23 +150,6 @@
     height: 330px;
     width: 280px;
   }
-
-  /* .recently-played-book-box.open:nth-last-child(2) {
-    display: none;
-  }
-
-  .book-list-section.open:nth-last-child(3) {
-    margin-right: 0 !important;
-  } */
-
-  /* .recently-played-book-box.open {
-    width: 280px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 330px;
-    width: 280px;
-  } */
 }
 
 @media (max-width: 780px) {
@@ -204,15 +161,6 @@
     height: 300px;
     width: 250px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 250px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 300px;
-    width: 250px;
-  } */
 }
 
 @media (max-width: 690px) {
@@ -224,15 +172,6 @@
     height: 270px;
     width: 220px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 220px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 270px;
-    width: 220px;
-  } */
 }
 
 @media (max-width: 650px) {
@@ -244,15 +183,6 @@
     height: 330px;
     width: 280px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 280px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 330px;
-    width: 280px;
-  } */
 }
 
 @media (max-width: 637px) {
@@ -264,15 +194,6 @@
     height: 280px;
     width: 250px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 250px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 280px;
-    width: 250px;
-  } */
 }
 
 @media (max-width: 565px) {
@@ -284,75 +205,38 @@
     height: 270px;
     width: 220px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 220px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 270px;
-    width: 220px;
-  } */
 }
 
 @media (max-width: 510px) {
   .recently-played-book-box {
-    width: 190px;
+    width: 185px;
     margin: 10px;
   }
 
   .side-book-section-image {
-    height: 240px;
-    width: 190px;
+    height: 235px;
+    width: 185px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 190px;
-    margin: 10px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 240px;
-    width: 190px;
-  } */
 }
 
-@media (max-width: 425px) {
+@media (max-width: 435px) {
   .recently-played-book-box {
-    width: 160px;
+    width: 155px;
   }
 
   .side-book-section-image {
-    height: 200px;
-    width: 160px;
+    height: 195px;
+    width: 155px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 160px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 200px;
-    width: 160px;
-  } */
 }
 
 @media (max-width: 365px) {
   .recently-played-book-box {
-    width: 140px;
+    width: 130px;
   }
 
   .side-book-section-image {
-    height: 180px;
-    width: 140px;
+    height: 170px;
+    width: 130px;
   }
-
-  /* .recently-played-book-box.open {
-    width: 140px;
-  }
-
-  .recently-played-book-box.open > .side-book-section-image {
-    height: 180px;
-    width: 140px;
-  } */
 }

@@ -36,20 +36,20 @@ const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
           </li>
         </div>
 
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <AiFillHome />
         </li>
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <AiOutlineHeart />
         </li>
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <FiShoppingCart />
         </li>
         <li className="navigation-item person">
           <BsPerson />
         </li>
 
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <MdLogout />
         </li>
       </ul>

@@ -11,7 +11,7 @@
 
 .components {
   padding-left: 150px;
-  padding-right: 30px;
+  padding-right: 40px;
   width: 1700px;
   margin: 0 auto;
 }
@@ -42,7 +42,7 @@
 
 @media (max-width: 650px) {
   .components {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }

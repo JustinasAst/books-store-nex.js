@@ -37,6 +37,7 @@ const MostPopularSection: React.FC<ComponentProps> = ({ booksData }) => {
                 <p className="author-name">
                   {item.name} {item.surname}
                 </p>
+
                 <h4 className="most-popular-book-name">{item.title}</h4>
 
                 <div className="most-popular-played-book-box-time-rating">

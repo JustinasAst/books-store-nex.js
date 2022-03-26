@@ -9,13 +9,16 @@
   justify-content: space-between;
 }
 
+.most-popular-played-book-box-info {
+  overflow: hidden;
+}
+
 .most-popular-played-book-box {
   display: flex;
   width: 30%;
   margin-top: 10px;
   justify-content: space-between;
   height: 140px;
-  overflow: hidden;
 }
 
 .most-popular-played-book-box > img {
@@ -76,3 +79,14 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 500px) {
+  .most-popular-played-book-box {
+    width: 100%;
+  }
+}
+/* @media (max-width: 340px) {
+  .most-popular-book-name {
+    width: 150px;
+  }
+} */
