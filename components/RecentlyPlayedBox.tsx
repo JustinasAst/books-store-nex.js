@@ -1,24 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooksRequest } from '../redux-book-store/actions';
+import { RootState } from '../redux-book-store/reducers/rootReducers';
 
-export interface IBooks {
-  userId: number;
-  id: number;
-  title: string;
-  name: string;
-  surname: string;
-  body: string;
-  img: string;
-}
+// export interface IBooks {
+//   userId: number;
+//   id: number;
+//   title: string;
+//   name: string;
+//   surname: string;
+//   body: string;
+//   img: string;
+// }
 
 interface ComponentProps {
   turnOn: () => void;
-  booksData: IBooks[];
+  // booksData: IBooks[];
 }
 
-export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
-  turnOn,
-  booksData,
-}) => {
+export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
+  const dispatch = useDispatch();
+  const { pending, books, error } = useSelector(
+    (state: RootState) => state.books
+  );
+
+  useEffect(() => {
+    dispatch(fetchBooksRequest());
+  }, []);
+
+  console.log(books, 'cia yra knygos');
+
   return (
     <div className="recently-played-book-section">
       <div className="recently-played-book-section-header">
@@ -29,7 +40,7 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
       </div>
 
       <div className="book-list-section">
-        {booksData.slice(0, 4).map((item, id) => (
+        {books.slice(0, 4).map((item, id) => (
           <div
             key={item.id}
             className="recently-played-book-box"

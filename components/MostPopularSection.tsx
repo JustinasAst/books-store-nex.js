@@ -1,23 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooksRequest } from '../redux-book-store/actions';
+import { RootState } from '../redux-book-store/reducers/rootReducers';
 import { FaHeadphonesAlt } from 'react-icons/fa';
 import { BsFillStarFill } from 'react-icons/bs';
 
-export interface IBooks {
-  userId: number;
-  id: number;
-  title: string;
-  name: string;
-  popular: boolean;
-  surname: string;
-  body: string;
-  img: string;
-}
+const MostPopularSection: React.FC = () => {
+  const dispach = useDispatch();
+  const { pending, books, error } = useSelector(
+    (state: RootState) => state.books
+  );
 
-interface ComponentProps {
-  booksData: IBooks[];
-}
-
-const MostPopularSection: React.FC<ComponentProps> = ({ booksData }) => {
+  useEffect(() => {
+    dispach(fetchBooksRequest());
+  }, []);
   return (
     <div className="most-popular-played-book-section">
       <div className="most-popular-played-book-section-header">
@@ -26,7 +22,7 @@ const MostPopularSection: React.FC<ComponentProps> = ({ booksData }) => {
       </div>
 
       <div className="most-popular-played-book-box-section-list">
-        {booksData
+        {books
           .filter((book) => book.popular === true)
           .slice(0, 3)
           .map((item, id) => (
