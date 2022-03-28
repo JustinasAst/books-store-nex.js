@@ -28,7 +28,8 @@
 .side-book-section-header > p {
   color: rgb(104, 102, 102);
   cursor: pointer;
-  margin: 20px 0 30px;
+  /* margin: 20px 0 30px; */
+  margin: 0px 0px 30px 0px;
 }
 
 .side-book-section-main-book {
@@ -131,12 +132,6 @@
   .audio-player-box {
     background-color: rgb(247, 235, 212);
   }
-}
-
-@media (max-width: 1530px) {
-  /* .book-name {
-    font-size: 36px;
-  } */
 }
 
 @media (max-width: 1335px) {
@@ -243,5 +238,9 @@
 
   .side-book-section-header {
     height: 60px;
+  }
+
+  .side-book-section-header > p {
+    margin: 0px;
   }
 }

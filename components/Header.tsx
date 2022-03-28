@@ -25,8 +25,9 @@ const Header: React.FC<ComponentPromps> = ({
       <div className="turn-on-search" onClick={searchTurnOn}>
         <FaSearch />
       </div>
-
-      <h2 className="greeting">Good Morning, Justinas</h2>
+      <div className="greeting-box">
+        <h2 className="greeting">Good Morning, Justinas</h2>
+      </div>
 
       <div className="input-bell-box">
         <div className={`search-imput-box ${searchToggle ? 'open' : ''} `}>
