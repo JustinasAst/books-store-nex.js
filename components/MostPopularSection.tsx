@@ -1,6 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { FaHeadphonesAlt } from 'react-icons/fa';
-import { BsFillStarFill, BsTypeH1 } from 'react-icons/bs';
+import { BsFillStarFill } from 'react-icons/bs';
 
 export interface IBooks {
   userId: number;

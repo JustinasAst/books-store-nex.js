@@ -13,7 +13,7 @@
   bottom: 0;
   right: 0;
   margin: 20px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 :nth-child() .heder-and-book-section {
@@ -28,7 +28,6 @@
 .side-book-section-header > p {
   color: rgb(104, 102, 102);
   cursor: pointer;
-  /* margin: 20px 0 30px; */
   margin: 0px 0px 30px 0px;
 }
 
@@ -99,9 +98,9 @@
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.5px;
   line-height: 2;
-  overflow: auto;
   padding: 40px;
   margin-bottom: 25px;
+  overflow: auto;
 }
 
 .book-text > p::first-letter {
@@ -120,13 +119,13 @@
   padding: 0 10px 0 10px;
 }
 
-.test {
-  display: block;
+.scroll-content-box {
+  display: contents;
   overflow: auto;
 }
 
 @media (max-height: 500px) {
-  .test {
+  .scroll-content-box {
     height: 300px;
   }
   .audio-player-box {
@@ -242,5 +241,11 @@
 
   .side-book-section-header > p {
     margin: 0px;
+  }
+}
+
+@media (max-height: 600px) {
+  .scroll-content-box {
+    display: block;
   }
 }

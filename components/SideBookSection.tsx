@@ -17,7 +17,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
     <>
       {toggle === true ? (
         <div className="side-book-section">
-          <div className="test">
+          <div className="scroll-content-box">
             <div className="side-book-section-centering-section">
               <div className="heder-book-section">
                 <div className="side-book-section-header">
@@ -40,10 +40,12 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                     <h2 className="reading-book-info-title">
                       Games of Thrones
                     </h2>
+
                     <p className="reading-book-info-author">Vardas Pavarde</p>
                     <p className="reading-book-info-chapter">
                       Chapter Eight: Partners
                     </p>
+
                     <button type="button" className="chapter-list-button">
                       <CgList style={{ marginRight: '5px' }} /> Chapter-list
                     </button>

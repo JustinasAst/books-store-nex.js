@@ -15,7 +15,6 @@ export const AudioPlayer = () => {
 
   const progressBar =
     React.useRef() as React.MutableRefObject<HTMLInputElement>;
-  console.log(progressBar.current);
 
   useEffect(() => {
     const seconds = Math.floor(audioPlayer.current.duration);

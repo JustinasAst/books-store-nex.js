@@ -9,7 +9,6 @@ import MostPopularSection from '../components/MostPopularSection';
 import SideBookSection from '../components/SideBookSection';
 
 import { useState, useEffect } from 'react';
-import { stringify } from 'querystring';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
@@ -48,7 +47,7 @@ const Home: NextPage = () => {
   const searchTurnOff = () => {
     setSearchTogle(false);
   };
-  // style={{ paddingRight: toggle ? '400px' : '' }}
+
   return (
     <div className={styles.container}>
       <Head>
@@ -70,11 +69,7 @@ const Home: NextPage = () => {
             searchTurnOff={searchTurnOff}
           />
           <ListenedBookBox />
-          <RecentlyPlayedBox
-            turnOn={turnOn}
-            booksData={booksData}
-            toggle={toggle}
-          />
+          <RecentlyPlayedBox turnOn={turnOn} booksData={booksData} />
           <MostPopularSection booksData={booksData} />
         </div>
 
