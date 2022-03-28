@@ -24,6 +24,7 @@
 .most-popular-played-book-box > img {
   border-radius: 10px;
   width: 100px;
+  box-shadow: 0px 10px 27px 1px rgba(0, 0, 0, 0.37);
 }
 
 .most-popular-played-book-box-section-list {
