@@ -5,8 +5,15 @@
 .side-book-section {
   background-color: rgb(247, 235, 212);
   border-radius: 10px;
-  max-width: 700px;
-  height: 100vh;
+  max-width: 500px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  overflow: hidden;
 }
 
 :nth-child() .heder-and-book-section {
@@ -16,23 +23,26 @@
 .side-book-section-header {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
 }
 
 .side-book-section-header > p {
   color: rgb(104, 102, 102);
   cursor: pointer;
+  margin: 0px 0px 30px 0px;
 }
 
 .side-book-section-main-book {
   display: flex;
-  height: 200px;
-  width: 100%;
-  padding-bottom: 20px;
+  height: 220px;
+  padding-bottom: 10px;
 }
 
 .reading-book-info {
   margin-left: 20px;
+  display: block;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .active-book-image {
@@ -50,12 +60,18 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 26px;
+  margin-top: 30px;
 }
 
 .reading-book-info-title {
   font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .reading-book-info-author {
@@ -67,20 +83,24 @@
 .reading-book-info-chapter {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
+  font-size: 16px;
   letter-spacing: 0.5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .side-book-section-centering-section {
-  width: 85%;
-  margin: 0 auto;
+  padding: 40px 40px 0 40px;
 }
 
 .book-text {
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.5px;
   line-height: 2;
+  padding: 40px;
+  margin-bottom: 25px;
   overflow: auto;
-  height: 65vh;
 }
 
 .book-text > p::first-letter {
@@ -91,40 +111,144 @@
   float: left;
 }
 
+.chapter-text {
+  margin: 0;
+}
+
+.audio-player-box {
+  padding: 0 10px 0 10px;
+}
+
+.scroll-content-box {
+  display: contents;
+  overflow: auto;
+}
+
+@media (max-height: 500px) {
+  .scroll-content-box {
+    height: 300px;
+  }
+  .audio-player-box {
+    background-color: rgb(247, 235, 212);
+  }
+}
+
+@media (max-width: 1335px) {
+  .side-book-section {
+    max-width: 450px;
+  }
+
+  .side-book-section-centering-section {
+    padding: 25px 25px 0 25px;
+  }
+
+  .side-book-section-main-book {
+    display: flex;
+    height: 200px;
+  }
+
+  .chapter-list-button {
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px;
+  }
+  .side-book-section-header > p {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 850px) {
   .side-book-section {
     box-sizing: border-box;
-    max-width: 100%;
-    min-height: 100vh;
   }
 }
 
-@media (max-width: 775px) {
+@media (max-width: 575px) {
   .side-book-section {
-    max-width: 90%;
-    position: absolute;
-    left: 5%;
-    z-index: 3;
+    max-width: 575px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 }
 
-@media (max-width: 450px) {
-  .side-book-section-main-book {
-    display: block;
-    height: 100%;
-    text-align: center;
+@media (max-width: 472px) {
+  .reading-book-info-title {
+    font-size: 20px;
   }
 
-  .active-book-image {
-    width: 80%;
+  .reading-book-info-chapter {
+    font-size: 16px;
+  }
+
+  .side-book-section-main-book {
+    height: 180px;
   }
 
   .reading-book-info {
-    margin: 0 auto;
-    text-align: center;
+    margin-left: 10px;
+  }
+
+  .chapter-list-button {
+    height: 20px;
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .active-book-image {
+    height: 130px;
+  }
+
+  .audio-player {
+    padding-top: 0px;
+  }
+
+  .chapter-list-button {
+    height: 10px;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 0px;
+    width: 100px;
+  }
+
+  .reading-book-info-title {
+    font-size: 18px;
+  }
+
+  .reading-book-info-chapter {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .reading-book-info-author {
+    margin: 6px 0;
+    font-size: 12px;
   }
 
   .book-text {
-    height: 450px;
+    padding: 20px;
+  }
+
+  .side-book-section-main-book {
+    height: 140px;
+  }
+
+  .side-book-section-header {
+    height: 60px;
+  }
+
+  .side-book-section-header > p {
+    margin: 0px;
+  }
+}
+
+@media (max-height: 600px) {
+  .scroll-content-box {
+    display: block;
   }
 }

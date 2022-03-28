@@ -2,30 +2,51 @@ import React from 'react';
 import { VscBellDot } from 'react-icons/vsc';
 import { BsSearch } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaLongArrowAltUp, FaSearch } from 'react-icons/fa';
 
 interface ComponentPromps {
   menuTurnOn: () => void;
+  searchTurnOn: () => void;
+  searchTurnOff: () => void;
+  searchToggle: boolean;
 }
 
-const Header: React.FC<ComponentPromps> = ({ menuTurnOn }) => {
+const Header: React.FC<ComponentPromps> = ({
+  menuTurnOn,
+  searchTurnOn,
+  searchToggle,
+  searchTurnOff,
+}) => {
   return (
     <div className="header-box">
       <div className="burger-menu" onClick={menuTurnOn}>
-        <GiHamburgerMenu />
+        <GiHamburgerMenu className="burger" />
+      </div>
+      <div className="turn-on-search" onClick={searchTurnOn}>
+        <FaSearch />
+      </div>
+      <div className="greeting-box">
+        <h2 className="greeting">Good Morning, Justinas</h2>
       </div>
 
-      <h2 className="greeting">Good Morning, Justinas</h2>
-
       <div className="input-bell-box">
-        <label className="search-label">
-          <BsSearch />
-        </label>
+        <div className={`search-imput-box ${searchToggle ? 'open' : ''} `}>
+          <div className="search-imput-icon-box">
+            <i className="icon-inside">
+              <BsSearch />
+            </i>
 
-        <input
-          className="book-search-input"
-          type="text"
-          placeholder="Search books here"
-        />
+            <input
+              className="book-search-input"
+              type="text"
+              placeholder="Search books here"
+            />
+          </div>
+
+          <button className="close-search" onClick={searchTurnOff}>
+            <FaLongArrowAltUp />
+          </button>
+        </div>
 
         <p className="bell-icon">
           <VscBellDot />

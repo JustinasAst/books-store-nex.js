@@ -8,11 +8,21 @@ import RecentlyPlayedBox from '../components/RecentlyPlayedBox';
 import MostPopularSection from '../components/MostPopularSection';
 import SideBookSection from '../components/SideBookSection';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Home: NextPage = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
+  const [searchToggle, setSearchTogle] = useState(false);
+  const [booksData, setBooksData] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8080/books')
+      .then((response) => response.json())
+      .then((data) => setBooksData(data));
+  }, []);
+
+  console.log(booksData);
 
   const turnOff = () => {
     setToggle(false);
@@ -30,6 +40,14 @@ const Home: NextPage = () => {
     setMenuToggle(false);
   };
 
+  const searchTurnOn = () => {
+    setSearchTogle(true);
+  };
+
+  const searchTurnOff = () => {
+    setSearchTogle(false);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -38,14 +56,21 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main
+        className={[styles.main, !toggle ? styles.secondMain : ' '].join(' ')}
+      >
         <Navigation menuTurnOff={menuTurnOff} menuToggle={menuToggle} />
 
         <div className={styles.components}>
-          <Header menuTurnOn={menuTurnOn} />
+          <Header
+            menuTurnOn={menuTurnOn}
+            searchTurnOn={searchTurnOn}
+            searchToggle={searchToggle}
+            searchTurnOff={searchTurnOff}
+          />
           <ListenedBookBox />
-          <RecentlyPlayedBox turnOn={turnOn} />
-          <MostPopularSection />
+          <RecentlyPlayedBox turnOn={turnOn} booksData={booksData} />
+          <MostPopularSection booksData={booksData} />
         </div>
 
         <div className={styles.sideSection}>

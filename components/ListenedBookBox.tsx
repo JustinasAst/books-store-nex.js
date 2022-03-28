@@ -6,26 +6,43 @@ export const ListenedBookBox = () => {
     <div className="main-listened-box">
       <div className="book-cover-box">
         <img
-          className="listenedBook"
+          className="listened-book"
           src="https://cdn.waterstones.com/bookjackets/large/9781/4088/9781408855652.jpg"
           alt="Harry"
         />
       </div>
 
       <div className="book-title-box">
-        <p>Continue reading</p>
-        <h2>Harry Potter and the Phylosofers Stone</h2>
-        <p>
-          John Roberts <span className="dot">•</span> 12 Chapters
-        </p>
-
-        <div className="progres-value-box">
-          <p>Chapters 8</p>
-          <p> 90%</p>
+        <p className="continue-reading-title">Continue reading</p>
+        <div className="book-name-container">
+          <h2
+            className="book-name"
+            title="Harry Potter and the Phylosofers Stone"
+          >
+            Harry Potter and the Phylosofers Stone
+          </h2>
         </div>
 
-        <div className="progress-background">
-          <div className="progress-value"></div>
+        <div className="author-and-chapter-title ">
+          <span className="author-name">John Roberts</span>
+          <span className="dot">•</span>
+          <span className="book-chapter">12 Chapters</span>
+        </div>
+
+        <div className="progres-value-box">
+          <p className="chapter-percent">Chapters 8</p>
+          <p className="chapter-percent"> 90%</p>
+        </div>
+
+        <div className="progress-bar-container">
+          <div className="progress-background">
+            <div className="progress-value"></div>
+          </div>
+          <div className="play-button-box-phone">
+            <button type="button" className="play-button">
+              <BsFillCaretRightFill />
+            </button>
+          </div>
         </div>
       </div>
 

@@ -17,39 +17,44 @@ export const SideBookSection: React.FC<ComponentProps> = ({
     <>
       {toggle === true ? (
         <div className="side-book-section">
-          <div className="side-book-section-centering-section">
-            <div className="heder-book-section">
-              <div className="side-book-section-header">
-                <p style={{ fontSize: '30px' }}>
-                  <HiOutlineArrowNarrowLeft onClick={turnOff} />
-                </p>
-                <p style={{ fontSize: '30px' }}>
-                  <MdOutlineStickyNote2 />
-                </p>
-              </div>
-
-              <div className="side-book-section-main-book">
-                <img
-                  className="active-book-image"
-                  src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
-                  alt="games of thrones"
-                />
-
-                <div className="reading-book-info">
-                  <h2 className="reading-book-info-title">Games of Thrones</h2>
-                  <p className="reading-book-info-author">Vardas Pavarde</p>
-                  <p className="reading-book-info-chapter">
-                    Chapter Eight: Partners
+          <div className="scroll-content-box">
+            <div className="side-book-section-centering-section">
+              <div className="heder-book-section">
+                <div className="side-book-section-header">
+                  <p style={{ fontSize: '30px' }}>
+                    <HiOutlineArrowNarrowLeft onClick={turnOff} />
                   </p>
-                  <button type="button" className="chapter-list-button">
-                    <CgList style={{ marginRight: '5px' }} /> Chapter-list
-                  </button>
+                  <p style={{ fontSize: '30px' }}>
+                    <MdOutlineStickyNote2 />
+                  </p>
+                </div>
+
+                <div className="side-book-section-main-book">
+                  <img
+                    className="active-book-image"
+                    src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
+                    alt="games of thrones"
+                  />
+
+                  <div className="reading-book-info">
+                    <h2 className="reading-book-info-title">
+                      Games of Thrones
+                    </h2>
+
+                    <p className="reading-book-info-author">Vardas Pavarde</p>
+                    <p className="reading-book-info-chapter">
+                      Chapter Eight: Partners
+                    </p>
+
+                    <button type="button" className="chapter-list-button">
+                      <CgList style={{ marginRight: '5px' }} /> Chapter-list
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-
             <div className="book-text">
-              <p>
+              <p className="chapter-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
                 nulla possimus rem odit quo, quas laboriosam expedita ducimus
                 molestias iste vel doloremque perspiciatis labore nostrum magnam
@@ -116,10 +121,13 @@ export const SideBookSection: React.FC<ComponentProps> = ({
               </p>
             </div>
           </div>
-          <AudioPlayer />
+
+          <div className="audio-player-box">
+            <AudioPlayer />
+          </div>
         </div>
       ) : (
-        <div></div>
+        ''
       )}
     </>
   );

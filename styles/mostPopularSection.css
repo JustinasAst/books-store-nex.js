@@ -1,35 +1,41 @@
 .most-popular-played-book-section {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .most-popular-played-book-section-header {
   margin: 20px 0 0px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.most-popular-played-book-box-info {
+  overflow: hidden;
 }
 
 .most-popular-played-book-box {
   display: flex;
-  width: 33%;
-  margin-top: 20px;
+  width: 30%;
+  margin-top: 10px;
+  justify-content: space-between;
+  height: 140px;
 }
 
 .most-popular-played-book-box > img {
   border-radius: 10px;
   width: 100px;
-  height: 100%;
+  box-shadow: 0px 10px 27px 1px rgba(0, 0, 0, 0.37);
 }
 
 .most-popular-played-book-box-section-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .most-popular-played-book-box-time-rating {
   display: flex;
   justify-content: space-between;
-  width: 90%;
 }
 
 .most-popular-played-book-box-info p {
@@ -37,28 +43,46 @@
   font-size: 15px;
 }
 
-.most-popular-played-book-box-info > h4 {
-  font-family: 'Times New Roman', Times, serif;
+.most-popular-book-name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .most-popular-played-book-box-info {
-  margin-left: 10px;
+  margin-left: 20px;
+  font-size: 20px;
   width: 100%;
 }
 
-@media (max-width: 1850px) {
-  .most-popular-played-book-box {
-    width: 50%;
-  }
+.most-popular-see-all-link {
+  color: rgb(132, 69, 250);
+  font-weight: 500;
 }
 
-@media (max-width: 1260px) {
+.most-popular-title {
+  font-size: 28px;
+}
+
+@media (max-width: 1050px) {
   .most-popular-played-book-box-section-list {
     flex-direction: column;
   }
 
+  .most-popular-title {
+    font-size: 22px;
+  }
+
   .most-popular-played-book-box {
-    width: 60%;
+    width: 300px;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .most-popular-played-book-box {
+    width: 100%;
   }
 }

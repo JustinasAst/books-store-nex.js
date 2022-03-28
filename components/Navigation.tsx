@@ -6,6 +6,7 @@ import { FiShoppingCart } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
 import { MdLogout } from 'react-icons/md';
 import { ImCross } from 'react-icons/im';
+import { VscBellDot } from 'react-icons/vsc';
 
 interface ComponentPromps {
   menuToggle: boolean;
@@ -20,6 +21,9 @@ const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
           <li className="exit-navigation" onClick={menuTurnOff}>
             <ImCross />
           </li>
+          <li className="navigation-item bell-icon">
+            <VscBellDot />
+          </li>
           <li className="navigation-item lisen-item">
             <BiHeadphone />
           </li>
@@ -32,19 +36,20 @@ const Navigation: React.FC<ComponentPromps> = ({ menuTurnOff, menuToggle }) => {
           </li>
         </div>
 
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <AiFillHome />
         </li>
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <AiOutlineHeart />
         </li>
-        <li className="navigation-item">
+        <li className="navigation-item home">
           <FiShoppingCart />
         </li>
-        <li className="navigation-item">
+        <li className="navigation-item person">
           <BsPerson />
         </li>
-        <li className="navigation-item">
+
+        <li className="navigation-item home">
           <MdLogout />
         </li>
       </ul>

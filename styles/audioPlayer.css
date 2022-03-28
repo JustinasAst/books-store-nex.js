@@ -7,7 +7,7 @@
 .audio-player {
   width: 90%;
   margin: 0 auto 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .progress-bar {
@@ -55,4 +55,34 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .audio-player {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding-top: 5px;
+  }
+
+  .time-range {
+    margin-top: 5px;
+  }
+
+  .player-button-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .pause-play-button {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .forward-backward-button {
+    font-size: 25px;
+  }
 }
