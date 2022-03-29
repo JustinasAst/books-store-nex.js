@@ -9,6 +9,7 @@ interface ComponentPromps {
   searchTurnOn: () => void;
   searchTurnOff: () => void;
   searchToggle: boolean;
+  setSearchInputValue: any;
 }
 
 const Header: React.FC<ComponentPromps> = ({
@@ -16,6 +17,7 @@ const Header: React.FC<ComponentPromps> = ({
   searchTurnOn,
   searchToggle,
   searchTurnOff,
+  setSearchInputValue,
 }) => {
   return (
     <div className="header-box">
@@ -40,6 +42,7 @@ const Header: React.FC<ComponentPromps> = ({
               className="book-search-input"
               type="text"
               placeholder="Search books here"
+              onChange={(e) => setSearchInputValue(e.target.value)}
             />
           </div>
 

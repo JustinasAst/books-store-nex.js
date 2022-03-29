@@ -17,6 +17,7 @@ const Home: NextPage = () => {
   const [bookId, setBookId] = useState(0);
   const [listenedBookData, setListenedBookData] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [searchInputValue, setSearchInputValue] = useState('');
 
   const turnOff = () => {
     setToggle(false);
@@ -61,6 +62,7 @@ const Home: NextPage = () => {
             searchTurnOn={searchTurnOn}
             searchToggle={searchToggle}
             searchTurnOff={searchTurnOff}
+            setSearchInputValue={setSearchInputValue}
           />
           <ListenedBookBox
             listenedBookData={listenedBookData}
@@ -68,7 +70,11 @@ const Home: NextPage = () => {
             setIsPlaying={setIsPlaying}
           />
 
-          <RecentlyPlayedBox turnOn={turnOn} setBookId={setBookId} />
+          <RecentlyPlayedBox
+            turnOn={turnOn}
+            setBookId={setBookId}
+            searchInputValue={searchInputValue}
+          />
           <MostPopularSection />
         </div>
 
