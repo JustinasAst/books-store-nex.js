@@ -8,7 +8,7 @@ import { fetchBooksFailure, fetchBooksSuccess } from './actions';
 
 import { postTypes } from './actionTypes';
 
-const getBooks = () => axios.get<IBooks[]>('http://localhost:8080/books');
+const getBooks = () => axios.get<IBooks[]>('http://localhost:8000/books');
 
 function* fetchBooksSaga() {
   try {

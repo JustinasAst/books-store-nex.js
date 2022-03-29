@@ -8,10 +8,11 @@ import { stringify } from 'querystring';
 interface ComponentProps {
   toggle: boolean;
   bookId: number;
+  setListenedBookData: any;
   turnOff: () => void;
 }
 
-export interface BookDataById {
+interface BookDataById {
   userId: number;
   id: number;
   title: string;
@@ -25,6 +26,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
   toggle,
   turnOff,
   bookId,
+  setListenedBookData,
 }) => {
   const [bookData, setBookData] = useState<BookDataById>({
     userId: 0,
@@ -37,10 +39,14 @@ export const SideBookSection: React.FC<ComponentProps> = ({
   });
 
   useEffect(() => {
-    fetch(`http://localhost:8080/books/${bookId}`)
+    fetch(`http://localhost:8000/books/${bookId}`)
       .then((response) => response.json())
       .then((data) => setBookData(data));
   }, [bookId]);
+
+  const handleClick = () => {
+    setListenedBookData(bookId);
+  };
 
   return (
     <>
@@ -90,7 +96,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
           </div>
 
           <div className="audio-player-box">
-            <AudioPlayer />
+            <AudioPlayer handleClick={handleClick} />
           </div>
         </div>
       ) : (
@@ -101,6 +107,6 @@ export const SideBookSection: React.FC<ComponentProps> = ({
 };
 
 export default SideBookSection;
-function data(data: any) {
+function data(_data: any) {
   throw new Error('Function not implemented.');
 }

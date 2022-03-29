@@ -7,47 +7,15 @@ import ListenedBookBox from '../components/ListenedBookBox';
 import RecentlyPlayedBox from '../components/RecentlyPlayedBox';
 import MostPopularSection from '../components/MostPopularSection';
 import SideBookSection from '../components/SideBookSection';
-
-// import { useDispatch, useSelector } from 'react-redux';
-// import { fetchBooksRequest } from '../redux-book-store/actions';
-// import { RootState } from '../redux-book-store/reducers/rootReducers';
-
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ImInsertTemplate } from 'react-icons/im';
-
-// export interface IBooksData {
-//   userId: number;
-//   id: number;
-//   title: string;
-//   name: string;
-//   surname: string;
-//   body: string;
-//   img: string;
-// }
-
-export interface ID {
-  id: number;
-}
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [searchToggle, setSearchTogle] = useState(false);
   const [bookId, setBookId] = useState(0);
-
-  // const [bookData, setBookData] = useState([]);
-
-  // useEffect(() => {
-  //   fetch(`http://localhost:8080/books/${bookId}`)
-  //     .then((response) => response.json())
-  //     .then((data) => console.log(data))
-  //     .catch((err) => {
-  //       console.log(err.message);
-  //     });
-  // }, [bookId]);
-
-  // console.log(bookData);
-  console.log(bookId);
+  const [listenedBookData, setListenedBookData] = useState(1);
 
   const turnOff = () => {
     setToggle(false);
@@ -73,8 +41,6 @@ const Home: NextPage = () => {
     setSearchTogle(false);
   };
 
-  // console.log(bookId, 'cia yra bookId');
-
   return (
     <div className={styles.container}>
       <Head>
@@ -95,13 +61,19 @@ const Home: NextPage = () => {
             searchToggle={searchToggle}
             searchTurnOff={searchTurnOff}
           />
-          <ListenedBookBox />
+          <ListenedBookBox listenedBookData={listenedBookData} />
+
           <RecentlyPlayedBox turnOn={turnOn} setBookId={setBookId} />
           <MostPopularSection />
         </div>
 
         <div className={styles.sideSection}>
-          <SideBookSection toggle={toggle} turnOff={turnOff} bookId={bookId} />
+          <SideBookSection
+            toggle={toggle}
+            turnOff={turnOff}
+            bookId={bookId}
+            setListenedBookData={setListenedBookData}
+          />
         </div>
       </main>
     </div>

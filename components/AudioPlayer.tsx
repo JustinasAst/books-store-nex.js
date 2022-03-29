@@ -5,7 +5,11 @@ import { BsFillSkipForwardFill } from 'react-icons/bs';
 import { ImPlay3 } from 'react-icons/im';
 import { GiPauseButton } from 'react-icons/gi';
 
-export const AudioPlayer = () => {
+interface ComponentProps {
+  handleClick: () => void;
+}
+
+export const AudioPlayer: React.FC<ComponentProps> = ({ handleClick }) => {
   const [isPlaying, setIsplaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -72,10 +76,15 @@ export const AudioPlayer = () => {
         <button type="button" className="forward-backward-button">
           <GrBackTen />
         </button>
-
-        <button type="button" className="pause-play-button" onClick={playPause}>
-          {isPlaying ? <GiPauseButton /> : <ImPlay3 />}
-        </button>
+        <div onClick={handleClick}>
+          <button
+            type="button"
+            className="pause-play-button"
+            onClick={playPause}
+          >
+            {isPlaying ? <GiPauseButton /> : <ImPlay3 />}
+          </button>
+        </div>
 
         <button type="button" className="forward-backward-button">
           <GrForwardTen />
