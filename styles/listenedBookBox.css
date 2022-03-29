@@ -31,6 +31,10 @@
   color: rgb(169, 155, 219);
 }
 
+/* .book-name-container {
+  overflow: hidden;
+} */
+
 .listened-book {
   max-height: 270px;
   border-radius: 10px;

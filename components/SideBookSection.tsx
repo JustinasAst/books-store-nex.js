@@ -72,7 +72,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                   <img
                     className="active-book-image"
                     src={`${bookData.img}`}
-                    alt="games of thrones"
+                    alt={bookData.title}
                   />
 
                   <div className="reading-book-info">
@@ -115,6 +115,3 @@ export const SideBookSection: React.FC<ComponentProps> = ({
 };
 
 export default SideBookSection;
-function data(_data: any) {
-  throw new Error('Function not implemented.');
-}

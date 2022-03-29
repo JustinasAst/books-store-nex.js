@@ -43,24 +43,20 @@ export const ListenedBookBox: React.FC<ComponentProps> = ({
       .then((data) => setBookData(data));
   }, [listenedBookData]);
 
-  console.log(bookData);
-
   return (
     <div className="main-listened-box">
       <div className="book-cover-box">
-        <img className="listened-book" src={`${bookData.img}`} alt="Harry" />
+        <img
+          className="listened-book"
+          src={`${bookData.img}`}
+          alt={bookData.title}
+        />
       </div>
 
       <div className="book-title-box">
         <p className="continue-reading-title">Continue reading</p>
-        <div className="book-name-container">
-          <h2
-            className="book-name"
-            title="Harry Potter and the Phylosofers Stone"
-          >
-            {bookData.title}
-          </h2>
-        </div>
+
+        <h2 className="book-name">{bookData.title}</h2>
 
         <div className="author-and-chapter-title ">
           <span className="author-name-surname">

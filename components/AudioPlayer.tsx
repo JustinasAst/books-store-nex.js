@@ -16,11 +16,8 @@ export const AudioPlayer: React.FC<ComponentProps> = ({
   isPlaying,
   setIsPlaying,
 }) => {
-  // const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
-
-  console.log(isPlaying);
 
   const audioPlayer =
     React.useRef() as React.MutableRefObject<HTMLAudioElement>;

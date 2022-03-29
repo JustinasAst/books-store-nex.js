@@ -16,10 +16,6 @@
   overflow: hidden;
 }
 
-:nth-child() .heder-and-book-section {
-  top: 20px;
-}
-
 .side-book-section-header {
   display: flex;
   justify-content: space-between;
@@ -50,7 +46,7 @@
 }
 
 .chapter-list-button {
-  width: 100%;
+  width: 230px;
   height: 40px;
   background-color: rgb(252, 243, 243);
   border: 2px solid var(--solid-black);
@@ -61,7 +57,7 @@
   justify-content: center;
   font-weight: 500;
   font-size: 18px;
-  padding: 26px;
+  padding: 24px;
   margin-top: 30px;
 }
 
@@ -117,6 +113,7 @@
 
 .audio-player-box {
   padding: 0 10px 0 10px;
+  margin-top: auto;
 }
 
 .scroll-content-box {
@@ -171,6 +168,14 @@
     bottom: 0;
     right: 0;
     left: 0;
+  }
+
+  .chapter-list-button {
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 20px;
   }
 }
 

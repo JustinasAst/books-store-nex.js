@@ -27,7 +27,7 @@ const MostPopularSection: React.FC = () => {
           .slice(0, 3)
           .map((item, id) => (
             <div key={id} className="most-popular-played-book-box">
-              <img src={item.img} alt="hobbit" />
+              <img src={item.img} alt={item.title} />
 
               <div className="most-popular-played-book-box-info">
                 <p className="author-name">
