@@ -1,24 +1,18 @@
-import React, { useEffect } from 'react';
+/* eslint-disable react/jsx-no-duplicate-props */
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBooksRequest } from '../redux-book-store/actions';
 import { RootState } from '../redux-book-store/reducers/rootReducers';
 
-// export interface IBooks {
-//   userId: number;
-//   id: number;
-//   title: string;
-//   name: string;
-//   surname: string;
-//   body: string;
-//   img: string;
-// }
-
 interface ComponentProps {
   turnOn: () => void;
-  // booksData: IBooks[];
+  setBookId: any;
 }
 
-export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
+export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
+  turnOn,
+  setBookId,
+}) => {
   const dispatch = useDispatch();
   const { pending, books, error } = useSelector(
     (state: RootState) => state.books
@@ -27,8 +21,6 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
   useEffect(() => {
     dispatch(fetchBooksRequest());
   }, []);
-
-  console.log(books, 'cia yra knygos');
 
   return (
     <div className="recently-played-book-section">
@@ -44,9 +36,10 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({ turnOn }) => {
           <div
             key={item.id}
             className="recently-played-book-box"
-            onClick={turnOn}
+            onClick={() => setBookId(item.id)}
           >
             <img
+              onClick={turnOn}
               className="side-book-section-image"
               src={`${item.img}`}
               alt={item.title}

@@ -1,4 +1,3 @@
-// import axios, { AxiosResponse } from 'axios';
 import axios, { AxiosResponse } from 'axios';
 
 import { all, call, put, takeLatest } from 'redux-saga/effects';

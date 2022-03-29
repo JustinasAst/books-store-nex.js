@@ -1,18 +1,47 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import { MdOutlineStickyNote2 } from 'react-icons/md';
 import { CgList } from 'react-icons/cg';
 import AudioPlayer from './AudioPlayer';
+import { stringify } from 'querystring';
 
 interface ComponentProps {
   toggle: boolean;
+  bookId: number;
   turnOff: () => void;
+}
+
+export interface BookDataById {
+  userId: number;
+  id: number;
+  title: string;
+  name: string;
+  surname: string;
+  body: string;
+  img: string;
 }
 
 export const SideBookSection: React.FC<ComponentProps> = ({
   toggle,
   turnOff,
+  bookId,
 }) => {
+  const [bookData, setBookData] = useState<BookDataById>({
+    userId: 0,
+    id: 0,
+    title: '',
+    name: '',
+    surname: '',
+    body: '',
+    img: '',
+  });
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/books/${bookId}`)
+      .then((response) => response.json())
+      .then((data) => setBookData(data));
+  }, [bookId]);
+
   return (
     <>
       {toggle === true ? (
@@ -32,16 +61,18 @@ export const SideBookSection: React.FC<ComponentProps> = ({
                 <div className="side-book-section-main-book">
                   <img
                     className="active-book-image"
-                    src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0064/9780006479888.jpg"
+                    src={`${bookData.img}`}
                     alt="games of thrones"
                   />
 
                   <div className="reading-book-info">
                     <h2 className="reading-book-info-title">
-                      Games of Thrones
+                      {bookData.title}
                     </h2>
 
-                    <p className="reading-book-info-author">Vardas Pavarde</p>
+                    <p className="reading-book-info-author">
+                      {bookData.name} {bookData.surname}
+                    </p>
                     <p className="reading-book-info-chapter">
                       Chapter Eight: Partners
                     </p>
@@ -54,71 +85,7 @@ export const SideBookSection: React.FC<ComponentProps> = ({
               </div>
             </div>
             <div className="book-text">
-              <p className="chapter-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-                nulla possimus rem odit quo, quas laboriosam expedita ducimus
-                molestias iste vel doloremque perspiciatis labore nostrum magnam
-                accusantium officiis porro sed ea ipsa libero ut, neque non.
-                Nemo quas maxime modi repellendus a iste provident voluptatibus
-                perferendis rerum blanditiis! Hic ratione consequuntur dolores,
-                veritatis ipsa excepturi aut eum voluptas sequi inventore
-                facilis placeat, debitis, harum architecto voluptate omnis?
-                Explicabo, error ad. Omnis recusandae porro eum? Eveniet maxime
-                labore quasi nulla, suscipit asperiores, fuga possimus
-                cupiditate autem minima Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quidem nulla possimus rem odit quo, quas
-                laboriosam expedita ducimus molestias iste vel doloremque
-                perspiciatis labore nostrum magnam accusantium officiis porro
-                sed ea ipsa libero ut, neque non. Nemo quas maxime modi
-                repellendus a iste provident voluptatibus perferendis rerum
-                blanditiis! Hic ratione consequuntur dolores, veritatis ipsa
-                excepturi aut eum voluptas sequi inventore facilis placeat,
-                debitis, harum architecto voluptate omnis? Explicabo, error ad.
-                Omnis recusandae porro eum? Eveniet maxime labore quasi nulla,
-                suscipit asperiores, fuga possimus cupiditate autem minima Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quidem nulla
-                possimus rem odit quo, quas laboriosam expedita ducimus
-                molestias iste vel doloremque perspiciatis labore nostrum magnam
-                accusantium officiis porro sed ea ipsa libero ut, neque non.
-                Nemo quas maxime modi repellendus a iste provident voluptatibus
-                perferendis rerum blanditiis! Hic ratione consequuntur dolores,
-                veritatis ipsa excepturi aut eum voluptas sequi inventore
-                facilis placeat, debitis, harum architecto voluptate omnis?
-                Explicabo, error ad. Omnis recusandae porro eum? Eveniet maxime
-                labore quasi nulla, suscipit asperiores, fuga possimus
-                cupiditate autem minima Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quidem nulla possimus rem odit quo, quas
-                laboriosam expedita ducimus molestias iste vel doloremque
-                perspiciatis labore nostrum magnam accusantium officiis porro
-                sed ea ipsa libero ut, neque non. Nemo quas maxime modi
-                repellendus a iste provident voluptatibus perferendis rerum
-                blanditiis! Hic ratione consequuntur dolores, veritatis ipsa
-                excepturi aut eum voluptas sequi inventore facilis placeat,
-                debitis, harum architecto voluptate omnis? Explicabo, error ad.
-                Omnis recusandae porro eum? Eveniet maxime labore quasi nulla,
-                suscipit asperiores, fuga possimus cupiditate autem minima Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Quidem nulla
-                possimus rem odit quo, quas laboriosam expedita ducimus
-                molestias iste vel doloremque perspiciatis labore nostrum magnam
-                accusantium officiis porro sed ea ipsa libero ut, neque non.
-                Nemo quas maxime modi repellendus a iste provident voluptatibus
-                perferendis rerum blanditiis! Hic ratione consequuntur dolores,
-                veritatis ipsa excepturi aut eum voluptas sequi inventore
-                facilis placeat, debitis, harum architecto voluptate omnis?
-                Explicabo, error ad. Omnis recusandae porro eum? Eveniet maxime
-                labore quasi nulla, suscipit asperiores, fuga possimus
-                cupiditate autem minima Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quidem nulla possimus rem odit quo, quas
-                laboriosam expedita ducimus molestias iste vel doloremque
-                perspiciatis labore nostrum magnam accusantium officiis porro
-                sed ea ipsa libero ut, neque non. Nemo quas maxime modi
-                repellendus a iste provident voluptatibus perferendis rerum
-                blanditiis! Hic ratione consequuntur dolores, veritatis ipsa
-                excepturi aut eum voluptas sequi inventore facilis placeat,
-                debitis, harum architecto voluptate omnis? Explicabo, error ad.
-                Omnis recusandae porro eum? Eveniet maxime labore quasi nulla,
-                suscipit asperiores, fuga possimus cupiditate autem minima
-              </p>
+              <p className="chapter-text">{bookData.body}</p>
             </div>
           </div>
 
@@ -134,3 +101,6 @@ export const SideBookSection: React.FC<ComponentProps> = ({
 };
 
 export default SideBookSection;
+function data(data: any) {
+  throw new Error('Function not implemented.');
+}
