@@ -7,12 +7,20 @@ import { GiPauseButton } from 'react-icons/gi';
 
 interface ComponentProps {
   handleClick: () => void;
+  isPlaying: boolean;
+  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const AudioPlayer: React.FC<ComponentProps> = ({ handleClick }) => {
-  const [isPlaying, setIsplaying] = useState(false);
+export const AudioPlayer: React.FC<ComponentProps> = ({
+  handleClick,
+  isPlaying,
+  setIsPlaying,
+}) => {
+  // const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+
+  console.log(isPlaying);
 
   const audioPlayer =
     React.useRef() as React.MutableRefObject<HTMLAudioElement>;
@@ -39,7 +47,7 @@ export const AudioPlayer: React.FC<ComponentProps> = ({ handleClick }) => {
 
   // minejai kad geriau naudoti du if negu naudoti else. Siuo atveju buciau naudojes ternary operator.
   const playPause = () => {
-    setIsplaying(!isPlaying);
+    setIsPlaying(!isPlaying);
     if (!isPlaying) {
       audioPlayer.current.play();
     }

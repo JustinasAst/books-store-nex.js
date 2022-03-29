@@ -9,6 +9,8 @@ interface ComponentProps {
   toggle: boolean;
   bookId: number;
   setListenedBookData: any;
+  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>;
+  isPlaying: boolean;
   turnOff: () => void;
 }
 
@@ -27,6 +29,8 @@ export const SideBookSection: React.FC<ComponentProps> = ({
   turnOff,
   bookId,
   setListenedBookData,
+  isPlaying,
+  setIsPlaying,
 }) => {
   const [bookData, setBookData] = useState<BookDataById>({
     userId: 0,
@@ -96,7 +100,11 @@ export const SideBookSection: React.FC<ComponentProps> = ({
           </div>
 
           <div className="audio-player-box">
-            <AudioPlayer handleClick={handleClick} />
+            <AudioPlayer
+              handleClick={handleClick}
+              isPlaying={isPlaying}
+              setIsPlaying={setIsPlaying}
+            />
           </div>
         </div>
       ) : (

@@ -4,6 +4,8 @@ import { GiPauseButton } from 'react-icons/gi';
 
 interface ComponentProps {
   listenedBookData: number;
+  setIsPlaying: any;
+  isPlaying: boolean;
 }
 
 interface BookDataById {
@@ -16,9 +18,11 @@ interface BookDataById {
 }
 
 export const ListenedBookBox: React.FC<ComponentProps> = ({
+  setIsPlaying,
+  isPlaying,
   listenedBookData,
 }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  // const [isPlaying, setIsPlaying] = useState(false);
   const [bookData, setBookData] = useState<BookDataById>({
     userId: 0,
     id: 0,
@@ -59,9 +63,13 @@ export const ListenedBookBox: React.FC<ComponentProps> = ({
         </div>
 
         <div className="author-and-chapter-title ">
-          <span className="author-name">{`${bookData.name} ${bookData.surname}`}</span>
-          <span className="dot">•</span>
-          <span className="book-chapter">12 Chapters</span>
+          <span className="author-name-surname">
+            {bookData.name} {bookData.surname}
+          </span>
+
+          <span className="book-chapter">
+            <span className="dot">•</span> 12 Chapters
+          </span>
         </div>
 
         <div className="progres-value-box">

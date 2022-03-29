@@ -3,9 +3,6 @@
   width: 300px;
   margin: 10px 15px;
 }
-.test {
-  display: none;
-}
 
 .book-list-section :last-child {
   margin-right: 0 !important;
