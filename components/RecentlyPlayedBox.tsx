@@ -29,20 +29,18 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
       return true;
     }
     if (
-      value.title.toLowerCase().includes(searchInputValue.toLocaleLowerCase())
+      value.name.toLowerCase().includes(searchInputValue.toLocaleLowerCase())
     ) {
       return true;
     }
     return false;
   };
 
-  const filter = books.filter(
+  const testas = books.filter(
     (value) =>
       value.name.toLocaleLowerCase() ===
       `${searchInputValue.toLocaleLowerCase()}`
   );
-  console.log(filter, 'cia turi buti isfiltrauta');
-  console.log('inputo val', searchInputValue);
 
   return (
     <div className="recently-played-book-section">
@@ -80,6 +78,3 @@ export const RecentlyPlayedBox: React.FC<ComponentProps> = ({
 };
 
 export default RecentlyPlayedBox;
-function searchInputValue(value: IBooks, searchInputValue: any): unknown {
-  throw new Error('Function not implemented.');
-}

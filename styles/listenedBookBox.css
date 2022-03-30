@@ -1,6 +1,6 @@
 :root {
   --primary: rgb(255, 255, 255);
-  --secondary: rgb(83, 43, 228);
+  --secondary: rgb(89, 78, 230);
   --solid-black: rgb(5, 5, 5);
 }
 
@@ -30,10 +30,6 @@
 .chapter-percent {
   color: rgb(169, 155, 219);
 }
-
-/* .book-name-container {
-  overflow: hidden;
-} */
 
 .listened-book {
   max-height: 270px;
